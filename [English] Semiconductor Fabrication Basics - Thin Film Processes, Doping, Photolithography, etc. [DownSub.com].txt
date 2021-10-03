@@ -1,0 +1,1496 @@
+Hi, so I'm going to be making creating 3 videos,
+this is the first of which where I'll be covering
+
+the Semiconductor Fabrication Basics
+
+So I'll be going through an overview of all
+of the steps required to make semiconductors,
+
+and then Ill be going to go a little more
+in depth in to each one of those, and talk
+
+about how the process works and the tools
+that are used to do that process
+
+In the next video, i'm going to show you how
+you can do some of those processes at home,
+
+on a low budget in a non clean-room environment
+so basically setting up a home chip lab.
+
+And then in the third video, I'll be going
+step by step in _my_ home setup, either making
+
+a diode or a transistors or maybe a NOR gate,
+step-by-step through that, and that's probably
+
+be a long video, and that will give you a
+more of a hands-on for you for all of these
+
+steps.
+
+To make the most sense out of these video's
+you should already have a basic understanding
+
+of terminology like doping, p-type, n-type,
+charge carrier mobility, you should be familiar
+
+with wafers crystal orientation , ,
+and the major and minor flats associated with
+
+them.
+
+All of that you can easily find on-line if
+you just look up semiconductor basics and
+
+stuff like that.
+
+OK, let's go over a quick overview of all
+of the steps
+
+Right here I have a drawing on how I manufacture
+NMOS FETs, these are N-type metal-oxide semiconductor
+
+field effect transistors, basically n-channel
+MOSFETS.
+
+And you start with a P-type  orientation
+wafer, the first step is called oxidation,
+
+this is a field oxide, and I grow on top of
+it a layer of silicon dioxide, SiO2, and that's
+
+basically sand or glass or whatever you want
+to call it, it's very very pure and it's a
+
+dielectric and its an insulator, and this
+is very very important, these layers are used
+
+for passivation (so protection), for insulation
+between multiple structures that you are building
+
+onto the wafer, and also more importantly
+they are used for the gate oxide of the FET
+
+here.
+
+So the first step, I grow this insulating
+layer right here on top of the wafer, and
+
+I'll talk about how that's done, there's a
+few methods of doing that, the one that I
+
+want for a field oxide its called, this is
+the first thick oxide here, I want about 500nm
+
+(5000A) thick and that'll be a blueish color
+due to thin film interference.
+
+The next step, I apply a mask to the wafer,
+and then dunk it in a hydrofluoric acid solution
+
+that then etches away these active areas into
+that SiO2 layer so we are left with the wafer
+
+with these regions of insulator on top of
+them but then these regions in between are
+
+bare silicon.
+
+Before you etch it in HF acid, if you want
+to clean up the wafer a little bit more you
+
+can do a surface treatment with "piranha"
+sulfuric acid, hydrogen peroxide and theres
+
+also RCA clean parts 1 and 2, theres some
+pretty nasty chemicals in there so be you
+
+have to be very careful...
+
+The third step is the doping, so I spin-coat
+a dopant and for N-type doping -I want to
+
+make these N-type wells here- that would be
+a phosphorous solution, so for this you can
+
+take phosphoric acid, and you can put it into
+water or if you want it to spin-coat even
+
+nicer you can use an alcohol solvent.
+
+Filmtronics sells pre-made spin-on diffusants
+and so does Emulsitone, but for both those
+
+companies its very pricey, and you can only
+get it in large quantities so you should get
+
+on with making your own... and you can spin-coat
+this by placing it on a rotating motor at
+
+around 3000RPM and you put this film onto
+it and it will spread across so this is one
+
+method of doping here and after thats on there
+you do pre-deposition and you put it in a
+
+furnace for about half an hour and it drives
+in the phosphorous atoms, so this is one method
+
+of doping called diffusion and it's in the
+past years mostly been replaced with ion implantation,
+
+other techniques, but this is the easiest
+way to do doping at home, so once we have
+
+N-type doped wells here, then we grow back
+a gate oxide, so we grow another layer of
+
+SiO2 very thin in the middle here, and then
+we make connections to the Drain, Source and
+
+Gate regions and the body of the MOSFET connects
+up to the source.
+
+To make the masks that I was talking about
+up here, theres a process called photo-lithography
+
+where you take a wafer you coat it with a
+photosensitive paint called photo-resist,
+
+and then you put a mask on top or in proximity
+of the wafer, or with projection systems the
+
+mask is further away with some very complicated
+optics, but to keep it simple I'll say you
+
+put the mask on top of the wafer and then
+you expose very high intensity UV light on
+
+to that wafer with the masks on it, and the
+masks limits the UV light to only hitting
+
+some portions of the chip, and then once thats
+done if its negative resist then you have
+
+to bake it one more time, but then you develop
+it and then you have a patterned wafer.
+
+So that would have a layer of photo-resist
+on top of this with some patterns in it and
+
+then you put it into the HF acid.
+
+The photo-resist will stop the HF acid, but
+the HF will still be able to etch through
+
+the (unprotected) SiO2 layers underneath there.
+
+We'll come back to this same drawing here
+in the second video when I talk more about
+
+how I do these processes at home.
+
+OK the first topic that I want to go in more
+detail about is oxidation, so I talked about
+
+this a bit before, this is the growth of an
+oxide layer like SiO2 on the wafer and it
+
+is used for a lot of things, its extremely
+useful for passivation so for a protection
+
+layer, its a hydrophilic layer and bare silicon
+is hydrophobic so if you want to spin coat
+
+a chemical on to this such as a dopant chemical
+you want the silicon to be hydrophilic and
+
+it helps to have a very very thin oxide layer
+that you grow onto it and that will allow
+
+the water-based dopant to spin onto it easier,
+and its so thin it doesn't act as a dopant
+
+barrier.
+
+When you do a RCA clean steps 1 and 2 it actually
+leaves a very thin SiO2 passivation layer
+
+behind, so hydrophilic is very useful however
+when you're spinning photo-resist onto it
+
+you want a hydrophobic surface, you want to
+get rid of all the water on there, so not
+
+so very good for photo-resist.
+
+Second thing, dopant barrier, so in the previous
+drawings I showed you about the MOSFET fabrication
+
+we used the SiO2 layer and then etch a pattern
+into it and then that pattern will prevent
+
+the phosphorous atoms from diffusing into
+the wafer in those spots, although P atoms
+
+do diffuse through the glass and the glass
+will become lightly doped its much slower
+
+than the diffusion through the silicon wafer
+so the dopants are effectively blocked by
+
+the SiO2
+
+And then the last 2 uses: Surface dielectric
+and device dielectric and this is the use
+
+in MOSFETs because the gate or any device
+that makes a capacitor onto a piece of silicon
+
+is using it in this manner where capacitor
+is basically 2 parallel plates and this is
+
+the dielectric that separates those 2 plates.
+
+Why SiO2?
+
+Well, it's easy to work with, it can be grown
+thermally which is very nice, one of the main
+
+goals of fabrication plants is to cut down
+the thermal budget so a lot of times thermal
+
+oxidation is only used in a very very large
+high production area when they can keep their
+
+furnaces up 24/7 and keep feeding wafers into
+them, at low volume runs the thermal budget
+
+starts to become overwhelming.
+
+Another reason why SiO2 is used is because
+its thermal expansion characteristics are
+
+very similar to that of silicon so as you
+put the wafer in and out of furnaces in different
+
+steps as the wafer expands and contracts the
+SiO2 passivation layers will expand and contract
+
+at a similar rate so that when you pull them
+back out of the oven nothing gets cracked
+
+or stretched and all of your CD (Critical
+Dimensions) stay very much the same, its not
+
+going to be perfect but its better than other
+passivation layers.
+
+Thermal oxidation basically means you take
+the wafer and put it in a really hot oven
+
+and the SiO2 will grow onto that naturally
+which is very nice.
+
+There's 2 methods: dry and wet.
+
+Wet is much much much faster for a couple
+of reasons but to know that you have to understand
+
+the mechanisms first, we'll get there.
+
+This is what's going on for dry oxidation.
+
+We're just using the ambient Oxygen O2 in
+the air and then that comes in contact with
+
+the silicon and this should be over a lot
+of heat over 1200 degrees C it starts around
+
+900 deg C 1200 deg C is really where you want
+to be if you are building an oxide and that
+
+forms SiO2 so -I'll talk about the graph in
+a second- so a few different thicknesses here
+
+it can range normally between a 100 and 5000A
+is where your practical limits are but this
+
+term here saying that gate oxides are around
+150A thats actually not quite true anymore
+
+we are getting at smaller and smaller and
+the advantage of thinning out that gate oxide
+
+is giving us a lower threshold voltage on
+field effect devices which is great but it
+
+gives us more and more leakage so its kind
+of coming to equilibrium here where we do
+
+not want to get the gate oxides much smaller,
+and I believe -Im not too sure about this-
+
+but I believe the aspect ratio between gate
+length to gate thickness is about 9, I think,
+
+Im not too sure about that, so the thinnest
+gates are used for tunneling devices because
+
+you'll experience quantum tunneling at these
+very very thin gate oxides and thats part
+
+of the reason why these very thin gate oxides
+on MOSFETs they experience leakage because
+
+of the tunneling effect, as we get thicker
+than that they are used for pad oxides on
+
+more complicated devices [for LOCOS processing],
+passivation is a thick layer, but the thickest
+
+layer of SiO2 that will be used is for field
+oxides, its called field oxides not only because
+
+they are dopant barriers, all of these are
+for the most part, but because it blocks electric
+
+fields, its too thick to create an electric
+field under most conditions, so field oxides
+
+are not used for gate oxides because they
+are just too thick, and gate oxides rely on
+
+the fact that the oxide can be used to create
+electric fields and store charge in it but
+
+field oxides are too thick and we use that
+to our advantage when fabricating devices
+
+because it allows us to insulate multiple
+FET devices and grow more metalization layers
+
+and such onto a wafer.
+
+Now let's understand the growth mechanism
+real quick, so with any thermal oxidation
+
+for the oxidation to take place, the oxygen
+O2 molecules have to come in contact with
+
+the silicon, and at first when you have a
+bare silicon wafer and you stick it in the
+
+oven thats great it happens right away you
+know you got this oxygen plentiful and you
+
+got the silicon wafer, but then as soon as
+you have the first layer of silicon dioxide
+
+grow onto that wafer all the sudden you have
+this layer thats blocking the silicon wafer
+
+underneath from the oxygen in the air so the
+rate will slow down, because like I said the
+
+reaction can't take place if the oxygen molecules
+are not in direct contact with the silicon,
+
+now we have this SiO2 layer in between them,
+so for the reaction to continue, either the
+
+silicon atoms have to diffuse up through the
+SiO2 to get to the oxygen, or the oxygen has
+
+to diffuse down in the SiO2 to get to the
+silicon wafer underneath and thats what happens
+
+with thermal oxidation, so initially this
+is called the linear growth stage, and its
+
+defined by linear growth constant B/A times
+time t, and that's right here in the graph
+
+here, that happens quite quickly and quite
+linearly, but then right here we get into
+
+the parabolic stage and its on the graph basically
+an inverse slanted parabola and thats due
+
+to that first SiO2 layer growing so that the
+O2 molecules are no longer in direct contact
+
+with the silicon and they have to diffuse
+all the way through that SiO2 layer and it
+
+takes a little bit of time to do so, so that's
+why we get this parabolic growth area here,
+
+and that can be kind of mitigated when we
+get to higher and higher temperatures.
+
+So at 950C this is going to be a more pronounced
+parabolic growth and then at 1200C its gonna
+
+be a little bit more linear a little bit better,
+but to help that problem even more than just
+
+raising the temperature, we do wet oxidation,
+and instead of using ambient O2 atmosphere
+
+we pump steam or water vapor into the furnace,
+and this cuts down the time dramatically to
+
+do so.
+
+Initially the linear growth linear is not
+changed much, but it will help this parabolic
+
+growth region immensely, and thats because
+when we're dealing with dry oxidation we're
+
+waiting for this big O2 molecule to diffuse
+through an already formed SiO2 layer, but
+
+with wet oxidation we're starting with Si
++ water and thats gonna yield SiO2 + H2 gas
+
+but since we are dealing with this water vapor
+it's actually a hydroxyl ion and it's smaller
+
+and will actually diffuse through SiO2 much
+much quicker than this O2 molecule, and that
+
+allows the parabolic growth region to be subdued
+and mitigated more, so we have more of a linear
+
+region throughout, and that's why wet oxidation
+is really the way to go, especially if you
+
+are doing this at home and you don't want
+to wait 24 hours to grow a field oxide, you
+
+can speed things up a lot by doing wet oxidation.
+
+But let's look at the downsides real quick.
+
+A very big goal of semiconductor fabs everywhere
+is to decrease the use of steps that involve
+
+liquids.
+
+We want to get everything so that all of these
+steps are done with gas sources, because gases
+
+are very pure and easy to maintain pure, so
+if we are just feeding this water even if
+
+its high quality deionized distilled water
+into the chamber and it becomes water vapor,
+
+there's a lot of opportunities for impurities
+to get in there, and the SiO2 film that is
+
+grown will not be as nice and as pure and
+as uniform when we do wet oxidation, the nicest
+
+film is with dry oxidation.
+
+Also semiconducting devices generally decrease
+in performance as they're exposed to more
+
+and more oxygen throughout all of the thermal
+steps, so if we can limit the amount of oxygen
+
+that they are exposed to that's better generally,
+it's mainly in diffusion steps where thats
+
+critical.
+
+But the dry oxidation although slower and
+more expensive because these furnaces have
+
+to be up higher and for longer, but it does
+give you a much nicer oxide, now this is only
+
+an issue when we are talking about things
+like gate oxides, that are very small, thin,
+
+precise and can't have a single pinhole on
+them.
+
+Because if we have a pinhole on the gate oxide,
+its no longer an insulating gate device, your
+
+electric field will be all screwy and the
+device characteristics will basically be garbage,
+
+so dry oxidation is a very good method for
+making gate oxides.
+
+OK, let's continue talking about oxidation.
+
+So one major thing that influences the rate
+of oxidation is the crystal orientation of
+
+the wafer that you are growing it onto.
+
+For example  orientation wafers have
+a higher packing density, they have more silicon
+
+atoms per unit volume [? area I think] so
+the rate of growth will be a lot faster on
+
+ wafers, and field effect devices are
+fabricated on  wafers so that means some
+
+of the thermal steps are slower for making
+field effect devices as opposed to MEMS and
+
+bipolar devices.
+
+Oxide layers that are grown over highly doped
+phosphorous regions are less dense, this is
+
+very important, they also etch faster thats
+because they are grown faster, up to five
+
+times the growth rate which is incredible
+so you have to be very careful of this when
+
+you are planning out oxide growth and etching
+steps, this also leads to higher undercutting
+
+and lots of other problems, so you think "oh!"
+you know "faster rate!" but sometimes thats
+
+an issue.
+
+When we have N type regions an effect called
+pile-up happens, and the reverse happens with
+
+P type "depletion", this is because phosphorous,
+an N type dopant, has a higher solubility
+
+in silicon than it does in SiO2.
+
+As the SiO2 layer grows, we talked about earlier
+how it grows not only above the surface of
+
+the wafer, but also into the wafer itself,
+because the oxygen or hydroxyl ions are diffusing
+
+into the wafer surface, so this oxide layer
+grows on top of the wafer and into the wafer.
+
+As it grows into the wafer the advancing SiO2
+layer, literally pushes the N type dopant
+
+atoms further and further into the wafer,
+and they remain at the interface between the
+
+SiO2 and the silicon, so thats pile-up.
+
+And then the reverse happens for P-type dopants,
+where they're actually drawn out of the wafer
+
+so both of these you have to be very careful
+about when you are designing a process because
+
+they can dramatically affect your dopant distribution.
+
+Another thing that affects rate is the presence
+of hydrochloric acid HCl, and there's actually
+
+some methods of oxidation -cooling added oxidation-
+that actually uses to increase the rate overall
+
+and this could also introduce a whole lot
+of mobile ionic contaminants and other stuff.
+
+Another thing you have to be very careful
+about are differential rates, because we talked
+
+about earlier the difference between the linear
+and parabolic growth region.
+
+So if you have a wafer, here as an example
+these are the steps to make a FET, some regions
+
+of SiO2 are thicker than other regions let's
+just say this region here is below 500A, and
+
+this one is about 2000A. this means when we
+put this back in the furnace to add more,
+
+this will be in the linear growth stage and
+this will be in the parabolic growth region,
+
+this thing will grow faster than that.
+
+So you may think "Oh!
+
+well if I have a growth rate of 1000A per
+hour, I put this wafer in the oven and if
+
+I take it out after one hour, everything will
+be a 1000A thicker!" that is far from what
+
+will actually happen, you will have a lot
+of variations in rates all across your wafer,
+
+because each oxide is in varying stages of
+this growth and thats even more expanded on
+
+the non-uniformity of it due to uneven heating
+while its in the furnace so theres a lot of
+
+issues there and thats partially where CMP
+(chemical mechanical planarization) will come
+
+into play, another extremely complicated topic,
+that is outside the scope of this video.
+
+Anyway you have to be careful about differential
+oxide growth rates.
+
+Some other processes other than this thermal
+oxide growth: I'm not gonna over them, but
+
+it's worth mentioning theres rapid thermal
+processes, theres high pressure oxidation
+
+which gets rid of a lot of the issues with
+thermal oxidation and then theres anodic oxidation,
+
+which I try theres a video elsewhere on my
+youtube channel, the problem is it involves
+
+an aqueous solution of potassium hydroxide
+or potassium nitrate or something, and thats
+
+very dirty, its hard to control contaminants
+in liquid solution, thats why a lot of semiconductor
+
+processes deal only with gases.
+
+So its very simple, basically just passing
+a current through - you got your silicon wafer
+
+immersed in this aqueous solution and thats
+connected to the positive of a current supply
+
+I use about a 100V DC on mine hence the name
+anodic oxidation, and then the negative just
+
+goes to the solution as a whole.
+
+And this is done at room temperature atmospheric
+pressure.
+
+This is extremely brief overview of photo-lithography,
+people have spent there entire life studying
+
+this one process alone, so I'm not even gonna
+scratch the surface with this and I won't
+
+attempt to, but the basic idea of photo-lithography
+is patterning a wafer, so in this drawing
+
+here I have a silicon wafer, a SiO2 passivation
+layer on top of it, and then a photo-resist
+
+layer thats spun on top of that SiO2 layer.
+
+That photo-resist is a photosensitive paint,
+we then have a mask above it that blocks light
+
+in some portions and allows light to go through
+in other portions.
+
+Intense DUV deep ultraviolet light is passed
+through that masked, and the light is stopped
+
+in this section and the light continues trough
+in these sections.
+
+This is a negative acting photo-resist, meaning
+that the portions that are exposed to light
+
+become polymerized and then after they are
+developed they don't wash away and they become
+
+structures.
+
+So the light is blocked in this little section
+in the middle therefore washes away after
+
+being developed and we're left with a hole.
+
+Now photo-lithography is extremely intricate
+and there are techniques to expose feature
+
+sizes that are incredibly small in the tens
+of nanometers ranges and below and these sizes
+
+are even smaller than the wavelength of the
+light used to expose them its absolutely incredible.
+
+You'd expect that the masks used are very
+expensive and they are!
+
+The masks are made out of I believe chrome
+plates that are written onto directly with
+
+focused electron beam and a set of masks to
+make an IC is hundreds and hundreds of thousands
+
+of dollars its absolutely nuts.
+
+There's 2 different [???] of masks, theres
+light field and dark field (sometimes called
+
+clear field or light field) and light field
+masks, the majority of them is clear its transparent,
+
+and the features you want to transfer are
+dark, and thats what this masks up here is,
+
+and then theres dark field masks where the
+majority of the mask is dark and the feature
+
+you want to transfer is light and then theres
+2 kinds of structure, hole and island, this
+
+is a hole and the inverse of it would be an
+island if this portion was polymerized and
+
+these 2 were un-polymerized.
+
+So this is just a quick thing you should be
+able to memorize.
+
+Theres a couple different types of photo-resist
+theres of course negative and positive, theres
+
+also light-sensitive and energy sensitive
+there are resists that are, the majority of
+
+them traditionally are UV sensitive, but theres
+also direct e-beam writing and writing and
+
+theres also X-ray methods for doing photo-lithography.
+
+Within the photo-resist theres 4 types of
+chemicals: polymer, solvent, sensitizer and
+
+sometimes additives.
+
+The polymer is the actual light-sensitive
+part, its the thing that changes structure,
+
+it becomes polymerized or becomes soluble
+based on the light that hits it, and the solvent
+
+is I don't know maybe like an alcohol or something
+like that, and that allows it to be coated
+
+in very thin layers onto the silicon wafer,
+that allows for spin coating basically, and
+
+then theres sensitizers and these are specific
+to the brand of photo-resist you buy I guess,
+
+and this allows the company to fine-tune the
+actual chemical reaction thats taking place
+
+during exposure, the method of polymerization
+basically, and the final thing are additives,
+
+so sometimes they'll add colored dyes into
+the photo-resist and other chemicals that
+
+the company desires that increase resolution
+capability, process yield, things like that,
+
+maybe its an additive that allows them to
+manufacture the photo-resist cheaper, possibly
+
+to make it have longer shelf life, possibly
+to focus the sensitized light region, so it
+
+only works on a specific part of the DUV spectrum,
+so this kind of thing would be additives inside
+
+the photo-resist.
+
+As far as characteristics of photo-resist,
+because you might think that negative and
+
+positive photo-resist are basically interchangeable
+but you just have to change your masks, thats
+
+not the case at all, negative and positive
+photo-resist are extremely different.
+
+Using positive photo-resist will give you
+higher resolution, higher aspect ratio, aspect
+
+ratio is the ratio between the smallest feature
+you can make and the thickness of the spin-on
+
+photo-resist.
+
+So positive wins in that category, but negative
+is easier to apply, has better adhesion, and
+
+negative also has a faster exposure speed,
+so you can run through an automated process
+
+faster and faster so negative is kind of better
+in those respects and is easier to work with.
+
+Positive same trend with the resolution, higher
+resolution, also higher quality, lower pinhole
+
+and impurity count, positive will flow into
+small steps into SiO2 and stuff much easier
+
+and it gives you better coverage in that respect,
+but positive is also more expensive, as far
+
+as removing the photo-resist after its been
+developed positive can be removed with simple
+
+solvents, some are water soluble, some alcohols
+and stuff.
+
+And the negative generally you need chlorinated
+substances, more nasty acids and stuff like
+
+that.
+
+The photo-resist strippers for negative are
+a little bit more nasty.
+
+Photo-resist is normally spin-coated onto
+the wafer, so there'll be a vacuum chuck where
+
+the wafer will be placed onto the chuck and
+a vacuum will suck it down onto the platform
+
+so its nice and flat, and then theres either
+static or dynamic dispense, where an arm will
+
+come across and dispense the photo-resist
+either when it is static when the wafer is
+
+not spinning, or dynamic the wafer will start
+spinning and then dispense, and then spin
+
+up to a higher RPM normally in the 3000-5000
+RPM range and that will make a nice even coating
+
+of the photo-resist right across the wafer,
+and then the excess will fly off and -its
+
+not recycled of course- but it will fly off
+and be collected.
+
+Before the photo-resist is spun on, theres
+a number of surface treatments that take place
+
+mainly just to get rid of all the water on
+this, theres dehydration baking, RCA cleans
+
+and stuff like that are not really used prior
+to this because they allow a hydrophilic surface,
+
+but I believe like an HF bath would make sense,
+because if theres no previous steps that would
+
+be screwed up by that, an HF bath would leave
+a nice hydrophobic surface for the photo-resist
+
+to be applied onto, then it will be spun,
+it will be dried, depending on if its negative
+
+or not there might be another soft-bake or
+hard-bake step and developed and dried.
+
+Aright lets talk about alignment and exposure
+techniques: So the first exposure techniques
+
+were basically contact, and thats where the
+mask on top was lowered down so it was touching
+
+the surface of the wafer, UV light was exposed
+through, and that was your exposure, and theres
+
+a couple of issues associated with that one
+of which is since you actually have a physical
+
+connection between your mask and your wafer,
+transfer of contamination, the mask does not
+
+last as long, you can scratch up the surface
+of the wafer, things like that, that lent
+
+to the development of proximity exposure systems
+where the mask is lifted off the wafer by
+
+a very small gap in between them, so the mask
+and wafer are in very close proximity, that
+
+eliminates some of the problems with contact,
+but as we get to smaller and smaller feature
+
+sizes, that little gap between the mask and
+the surface of the wafer really degrades the
+
+actual resolution that we can get, you know
+there's some diffraction, and some of the
+
+light is not passed through that gap as it
+should be, some of the light is set there
+
+off at different angles, and the image can
+be skewed so your critical dimensions are
+
+not quite what you wanted them to be.
+
+Next we have projection and stepper, stepper
+is the most complicated optical setup basically,
+
+and these use reticles or masks and projection
+systems so that the light source is further
+
+away from the wafer, its basically similar
+to - it's a reverse enlarger if you ever worked
+
+in a dark room developing black and white
+photographs, it's the opposite idea of an
+
+enlarger.
+
+So you have a light source and then right
+below it you have your mask, and then you
+
+have focusing lenses that focus that down
+and then you have your chip that gets exposed,
+
+a piece of silicon and then a stepper can
+do very high quality images, the mask contains
+
+the image for one chip, and that gets focused
+down onto an entire wafer, and then the wafer
+
+is stepped so that that image for one of the
+chips is exposed onto multiple locations on
+
+the wafer, and then the whole wafer is filled
+up with that exposed image onto it.
+
+So these ones right here are optical exposure
+methods, and then theres energy or non-optical
+
+exposure methods right here, these are done
+in vacuum, or at least e-beam is.
+
+so depending on the photoresist, some are
+sensitive to x-rays and e-beams, cool thing
+
+you can do with electron beam is that's actually
+a direct writing method where no mask is used,
+
+and where you have a very focusable and finely
+deflectable electron beam you can use that
+
+to write directly on the photoresist surface,
+it's just like a CRT it's like a raster scan
+
+and it wil draw out the image with this e-beam,
+I think it has to go over the image a few
+
+times to get it actually burnt into that photo-resist.
+
+OK, let's talk about doping next.
+
+So I'm gonna start with diffusion, which is
+a very simple method of doping, it has some
+
+downsides which I'll talk about in a second,
+it's commonly done inside a tube surface,
+
+and it's basically you're driving in atoms
+of phosphorous, arsenic or boron or whatever
+
+your dopant material is using a lot of heat.
+
+So the steps to do this, these are the steps
+to do it with a liquid source, theres liquid
+
+source, gas source and solid source.
+
+Solid source you have to use like BOCl3, gas
+source you gonna have diborane and phosphene
+
+gas, and they pump it in a chamber where the
+diffusion takes place.
+
+But with liquid source the steps we take to
+do that is: first we clean the wafer and if
+
+you etch it with HF after you clean it, you're
+going to want to put a very thin layer of
+
+SiO2 onto it so you have a hydrophilic surface
+and the next step will go nicely, if you have
+
+a hydrophobic surface caused by the HF then
+you won't be able to spin-coat the wafer very
+
+easily, it will bead up and it won't go well,
+so I recommend if you have to do an HF step
+
+right before it, do that and then do the first
+part of the RCA clean or something like that
+
+to leave a small passivation layer, then the
+next step you are going to put a couple of
+
+drops of either a phosphouric acid or boric
+acid solution depending on if you are doing
+
+you know N-type or P-type doping, and you're
+going to spin-coat that onto your wafer, and
+
+then right after you do that you don't want
+to leave it on the wafer too long before you
+
+do the pre-deposition step because you can
+get like hazing and things like that because
+
+of the excess oxygen thats going to come into
+play here.
+
+The next step known as predeposition places
+a high concentration of the heavier phosphorous
+
+or boron atoms and they come out of the acid
+and it places them right over the area where
+
+you want to do the diffusion and this can
+be done on a hot plate where you just place
+
+your wafer on top of the hotplate on like
+a piece of tin foil or something on a couple
+
+of hundred degrees C for 15 minutes or so
+or it can be done up to a thousand degrees
+
+C very quickly I'm sure theres also a rapid
+thermal process for doing this.
+
+After you do that you'll notice that on top
+of the wafer there's a thin, it will be thick
+
+actually, oxide layer that will form because
+your phosphorous spin on source is basically
+
+acting as a spin-on glass, and after the predeposition
+that will form glass on it, so you can put
+
+that in a weak HF bath maybe 1 or 2 percent,
+that will get rid of all the excess phosphorous
+
+film and also that unwanted oxidation on top
+of it.
+
+Then you'll do your drive-in step, and this
+takes place at 1200deg C optimally, it can
+
+start as low as 950 degrees C but you really
+want 1200 degrees C for about 45 minutes,
+
+and you want a very nitrogen rich atmosphere
+to do this drive-in diffusion step in.
+
+Once you take it out of the furnace, we talked
+earlier about depletion and pile-up, anytime
+
+you put this wafer in a furnace there's going
+to be some oxidation, whether you want it
+
+or you don't and that oxidation is going to
+change your distribution of dopants, so you
+
+have to be careful about that, so these graphs
+they indicate that at the surface here on
+
+an N-type diffused wafer will have a very
+high doping concentration as we progress that
+
+will drop of quite steeply because of the
+pile-up and then decrease after that.
+
+But then on the surface of a P-type wafer,
+it's depleted of those P-type charge carriers
+
+because of the depletion mechanism.
+
+One mostly unwanted side-effect of the diffusion
+is lateral diffusion, because ideally if we
+
+wanted to create a N- or P-type well right
+here, the atoms would diffuse straight down,
+
+and that would be awesome, but they don't,
+they diffuse to the sides, as much as they
+
+diffuse straight down, this is normally unwanted
+and this is one of the main reasons for the
+
+ion implantation technology being developed,
+which I will talk about in a second.
+
+There are some devices that actually use this
+to their advantage, there are LDMOS transistors,
+
+laterally diffused metal oxide semiconductor
+field effect transistors, and those use lateral
+
+diffusion to I believe they use it in like
+high power RF applications, microwave RF applications,
+
+and it allows them to put higher voltages
+through the device of this RF energy, they
+
+can put higher voltages before breakdown occurs,
+which is interesting.
+
+That pre-deposition step, you better look
+at that, once we spin on the film on top of
+
+it right here, then that pre-deposition step
+will put a high concentration in this case
+
+of phosphorous atoms right here, and right
+here and then they are driven in to create
+
+these N-type wells.
+
+This is the datasheet for emulsitone dopant
+this is for Borofilm 100 what they call it,
+
+and it says in here, well this you could basically
+assume, at higher temperatures you're going
+
+to have a lower sheet resistance at the end,
+and the same with longer times [???] but more
+
+importantly if we look at the atmosphere if
+you do this in ambient atmosphere so what's
+
+that you know like 70% nitrogen 20% oxygen
+so thats close to right here, thats the sheet
+
+resistance we're gonna have across the wafer,
+but if we do it in a purely nitrogen atmosphere,
+
+which it's done close to that commercially
+in a fab they'll pump nitrogen through it,
+
+we can decrease the overal sheet resistivity
+which is great, so it's very easy to create
+
+an atmosphere inside of a tube furnace, which
+is what these steps are normally done in,
+
+you basically just blow the nitrogen into
+the furnace, either perpendicularly or parallel
+
+to the wafers themselves, I think in here
+it says perpendicularly is best, but depending
+
+on what material you're blowing it, it differs.
+
+So the more nitrogen you have during the diffusion
+step, the better electrical characteristics
+
+you can get at the end.
+
+Last thing I want to talk about under doping
+is ion implantation, which is a incredibly
+
+complicated and dangerous and expensive and
+massive technology which eliminates this lateral
+
+diffusion issue, it also allows for extremely
+precise control over the distribution of the
+
+dopants, not onl the depth but also their
+concentration at that given depth.
+
+To explain that I'm gonna go to a book that
+has some better drawings than I could do,
+
+this is "Microchip fabrication" by Peter Van
+Zant, so here is your typical ion implantation
+
+system.
+
+First it's got an ion source, so there'll
+be phosphene or diborane gas that will come
+
+in here, it will be ionized into a plasma
+state, and then that will be electrostatically
+
+focused into a beam, and there's a mass analyzing
+magnet, and these are typically 90 degrees,
+
+somewhere a little bit more than 90 degrees,
+and this is set-up so that you can select
+
+which ions you want to implant, the ions that
+are heavier than what you want will not be
+
+able to make this sharp turn along the magnet
+and will hit the wall, the ions that are heavier
+
+[lighter?] will go too far and smash into
+the other side of the wall, and the ions that
+
+are just the right weight of what you want
+will make the 90 degree bend and go straight
+
+through, and then they're accelerated electrostatically
+and there's some magnetic lenses and such
+
+that give you a nice focusable and deflectable
+beam, and these super high energy ion beams
+
+can be in the MeV range and these machines
+are massive, then this focused beam can be
+
+scanned across your wafer in a raster scan
+style so that it can implant these ions into
+
+the wafer very uniformly.
+
+This is the mass analyzing magnet I was talking
+about, so we can select what ions we want
+
+based on their weight.
+
+This is how electrostatic beam deflection
+works, we can choose between ions that we
+
+want and other gasses that are not charged
+by passing them through electrostatic plates
+
+like this, and we can deflect only the ions
+into a wafer that we're implanting and then
+
+the other random gases that are impurities
+will continue straight across and be unaffected,
+
+and those can be trapped somewhere else and
+extracted.
+
+And this is the beam scanning I was talking
+about, so that we can coat the entire wafer
+
+and implant these ions.
+
+Ion implantation can also be used to very
+precisely control and modify threshold voltages
+
+of field effect devices like a MOSFET and
+can also be used to implant isolation slots,
+
+this is typically used in Gallium Arsenide
+high electron mobility field effect transistors
+
+so for microwave applications
+
+OK, the last 2 topics to talk about in this
+video.
+
+So everything up to this point has talked
+about how to make discrete devices, so how
+
+to make a single transistor, how to make a
+diode, something like that, but the difference
+
+between the ability to make discrete devices
+and actual integrated circuits is metalization,
+
+metalization allows us to make small connections
+between individual transistors that are on
+
+a board and connect them in ways that they
+have a greater function than just being individual
+
+transistors, so metalization is done by taking
+a wafer that has all these transistors and
+
+everything on it already, and then the entire
+wafer surface will be coated with metal, aluminum
+
+or copper something like that, and then same
+as photo-lithography process will happen,
+
+and then we can etch away that metal just
+to leave little traces and connections that
+
+connect all these individual components on
+the board.
+
+There's a few ways of doing that, enter the
+big umbrella of deposition, thin film deposition.
+
+There's so many methods that you can research,
+mainly there's chemical vapor deposition CVD,
+
+and physical vapor deposition PVD.
+
+So there are lots of CVD techniques, but mainly
+they are used to deposit and grow insulators
+
+and semiconductors, out of the insulators
+you can do SiO2 and silicon nitride layers,
+
+and out of the semiconductors you can grow
+epitaxial silicon, also polysilicon as well.
+
+Evaporation is a PVD technique and it can
+be used to deposit conductive metalization
+
+layers, like aluminum, copper, gold, nichrome,
+probably like tungsten if you have enough
+
+heat to be able to do that.
+
+Sputtering is another PVD technique, you can
+actually sputter SiO2 interestingly enough,
+
+but mainly its used to coat metals, like tungsten,
+titanium, molybden, aluminum, a huge use for
+
+sputtering is ITO, Indium Tin Oxide, you can
+create clear conductive coatings, and these
+
+are used heavily in organic LED technologies
+and thin film displays, things like that.
+
+Molecular beam epitaxy is kind of chemical
+process but its considered a PVD technique,
+
+MBE can be used to do so much stuff its incredible,
+mainly its used to do complex semiconductors
+
+like GaAs devices, set-up with effusion cells
+that have a small super pure sample of whatever
+
+you're trying to deposit wheither its aluminum,
+silicon, arsenic, gallium and a very pure
+
+sample of that is heated up with electron
+beam, and it basically boils in a vacuum,
+
+that can be deposited onto your substrate
+very nicely.
+
+Last topic is etching, so I mentioned earlier
+that you can etch SiO2 layers and stuff with
+
+HF acid, but this actually leads to something
+called isotropic etching, the HF solution
+
+will etch sideways in unwanted direction as
+fast as it etches down in the wanted direction,
+
+so ideally you want anisotropic etching, but
+thats not the case with these liquid etching
+
+sources.
+
+So this is why ion beam etching and milling
+and plasma etching has come into play, so
+
+you can actually get anisotropic etching.
+
+This is not a problem where you are making
+large devices, but as soon as you try to get
+
+things smaller and smaller you have to be
+very careful of your critical dimensions,
+
+and you have to allow for this tolerancing,
+another thing is every time you put your wafer
+
+in the furnace, your dopants will laterally
+diffuse as well, so you have to take into
+
+account unwanted lateral diffusion, and isotropic
+etching when you're designing a device.
+
+And you may think "Oh!
+
+I can make a .1 micron device!", well... make
+sure you take this into consideration, because
+
+theres a lot of wasted space in chips, especially
+older chips before plasma etching and stuff
+
+was very common, there was a lot of space
+that was wasted because of isotropic etching
+
+and such.
+
+A way around that to get a more anisotropic
+etch, is something like a reactive ion etching
+
+machine, so it consists of a vacuum chamber
+and mass flow controller where we can put
+
+a precise amount of reactive gas inside of
+it. and then we have this platform down here,
+
+which is sometimes spinning -not very fast
+I think- and thats grounded, and then we have
+
+an electrode in the top which ionizes the
+reactive gas into a plasma, and thats high
+
+energy RF, normally at 13.56MHz -the specific
+reason for using that is just because it's
+
+ISM band, and the harmonics don't screw with
+other electronics and stuff- and that RF excites
+
+and ignites the plasma, and it allows you
+to do a very controlled etch that's more anisotropic.
+
+This is a reactive ion etching machine, even
+more anisotropic than this would be an ion
+
+milling machine, is even more directional
+and better.
+
+That's it for this video, I hope you enjoyed
+it and learned something, so I'll see you
+
+in the next video that I make which as I said
+before will be me explaining how we can do
+
+some of these steps at home, kind of improvising
+them and on a pretty low budget as well, and
+
+then the video after that will be an actual
+step-by-step demonstration of making transistors
+
+and stuff!
+

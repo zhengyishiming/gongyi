@@ -1,0 +1,286 @@
+ArF Immersion Scanners
+NSR-S631E
+Resolution	≦ 38 nm
+NA	1.35
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Maximum exposure field	26 mm × 33 mm
+Overlay	SMO*1: ≦ 1.7 nm, MMO*2: ≦ 2.3 nm
+Throughput	≧ 250 wafers/hour (96 shots),
+≧ 270 wafers/hour (96 shots, optional)
+*1Single Machine Overlay: machine-to-self overlay accuracy (NSR-S631E#1 to S631E#1)
+*2Mix and Match Overlay: machine-to-machine overlay accuracy (NSR-S631E#1 to S631E#2)
+NSR-S630D
+Resolution	≦ 38 nm
+NA	1.35
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Maximum exposure field	26 mm × 33 mm
+Overlay	SMO*1: ≦ 1.7 nm, MMO*2: ≦ 2.5 nm
+Throughput	≧ 250 wafers/hour (96 shots)
+*1Single Machine Overlay: machine-to-self overlay accuracy (NSR-S630D#1 to S630D#1)
+*2Mix and Match Overlay: machine-to-machine overlay accuracy (NSR-S630D#1 to S630D#2)
+NSR-S621D
+Resolution	≦ 38 nm
+NA	1.35
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Maximum exposure field	26 mm × 33 mm
+Overlay	≦ 2 nm
+Throughput	≧ 200 wafers/hour (125 shots)
+NSR-S620D
+Resolution	≦ 38 nm
+NA	1.35
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Maximum exposure field	26 × 33 mm
+Overlay	≦ 3 nm
+Throughput	≧ 180 wafers/hour (300 mm wafer, 125 shots)
+NSR-S610C
+Resolution	≦ 45 nm
+NA	1.30
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Exposure field	26 × 33 mm
+Overlay	≦ 6.5 nm
+Throughput	≧ 130 wafers/hour (300 mm wafer, 76 shots)
+NSR-S609B
+Resolution	≦ 55 nm
+NA	1.07
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Exposure field	26 × 33 mm
+Alignment accuracy	≦ 7 nm
+Throughput	≧ 130 wafers/hour (300 mm wafer, 76 shots)
+ArF Scanners
+NSR-S320F
+Resolution	≦ 65 nm
+NA	0.92
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Maximum exposure field	26 mm × 33 mm
+Overlay	≦ 3 nm
+Throughput	≧ 200 wafers/hour (125 shots)
+NSR-S310F
+Resolution	≦ 65 nm
+NA	0.92
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Maximum exposure field	26 mm × 33 mm
+Overlay	≦ 7 nm
+Throughput	≧ 174 wafers/hour (76 shots)
+NSR-S308F
+Resolution	≦ 65 nm
+NA	0.92
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Exposure field	26 × 33 mm
+Alignment accuracy	≦ 8 nm
+NSR-S307E
+Resolution	≦ 80 nm
+NA	0.85
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Exposure field	26 × 33 mm
+Alignment accuracy	≦ 12 nm
+NSR-S306C
+Resolution	≦ 100 nm
+NA	0.78
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Exposure field	25 × 33 mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 20 nm
+NSR-S305B
+Resolution	≦ 110 nm
+NA	0.68
+Exposure light source	ArF excimer laser (193 nm wavelength)
+Reduction ratio	1:4
+Exposure field	25 × 33 mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 30 nm
+KrF Scanners/KrF Steppers
+NSR-S210D
+Resolution	≦ 110 nm
+NA	0.82
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:4
+Maximum exposure field	26 mm × 33 mm
+Overlay	≦ 9 nm
+Throughput	≧ 176 wafers/hour (76 shots)
+NSR-S208D
+Resolution	≦ 110 nm
+NA	0.82
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:4
+Exposure field	26 × 33 mm
+Alignment accuracy	≦ 10 nm
+Throughput	≧ 147 wafers/hour (300 mm wafer, 76 shots)
+NSR-S207D
+Resolution	≦ 110 nm
+NA	0.82
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:4
+Exposure field	26 × 33 mm
+Alignment accuracy	≦ 10 nm
+NSR-SF200
+Resolution	≦ 150 nm
+NA	0.63
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:4
+Exposure field	26 × 33 mm
+Alignment accuracy	≦ 28 nm
+Throughput	≧ 110 wafers/hour (300 mm wafer)
+≧ 120 wafers/hour (200 mm wafer)
+NSR-S206D
+Resolution	≦ 110 nm
+NA	0.82
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:4
+Exposure field	25 × 33 mm
+Alignment accuracy	≦ 20 nm
+NSR-S205C
+Resolution	≦ 130 nm
+NA	0.75
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:4
+Exposure field	25 × 33 mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 30 nm
+NSR-S204B
+Resolution	≦ 150 nm
+NA	0.68
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:4
+Exposure field	25 × 33 mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 35 nm
+NSR-S203B
+Resolution	≦ 180 nm
+NA	0.68
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:4
+Exposure field	25 × 33 mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 40 nm
+NSR-S202A
+Resolution	≦ 250 nm
+NA	0.60
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:4
+Exposure field	25 × 33 mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 45 nm
+NSR-2205EX14C
+Resolution	≦ 250 nm
+NA	0.60
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:5
+Exposure field	22 mm square to 17.9 (H) × 25.2 (V) mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 50 nm
+Alignment system	LSA (standard), FIA (standard), LIA (optional)
+NSR-2205EX12B
+Resolution	≦ 280 nm
+NA	0.55
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:5
+Exposure field	22 mm square to 17.9 (H) × 25.2 (V) mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 55 nm
+Alignment system	LSA (standard), FIA (standard), LIA (optional)
+NSR-S201A
+Resolution	≦ 250 nm
+NA	0.60
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:4
+Exposure field	25 × 33 mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 50 nm
+NSR-2205EX10B
+Resolution	≦ 320 nm
+Exposure light source	KrF excimer laser (248 nm wavelength)
+Reduction ratio	1:5
+Exposure field	22 mm square to 17.9 (H) × 25.2 (V) mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 80 nm
+i-line Steppers
+NSR-2205i14E2
+Resolution	≦ 350 nm
+NA	0.63
+Exposure light source	i-line (365 nm wavelength)
+Reduction ratio	1:5
+Exposure field	22 mm square to 17.9 (H) × 25.2 (V) mm
+Overlay	≦ 40 nm
+Throughput	≧ 103 wafers/hour (200 mm wafer)
+NSR-SF150
+Resolution	≦ 280 nm
+NA	0.62
+Exposure light source	i-line (365 nm wavelength)
+Reduction ratio	1:4
+Exposure field	26 × 33 mm
+Alignment accuracy	≦ 25 nm
+Throughput	≧ 180 wafers/hour (300 mm wafer, 76 shots)
+NSR-SF140
+Resolution	≦ 280 nm
+NA	0.62
+Exposure light source	i-line (365 nm wavelength)
+Reduction ratio	1:4
+Exposure field	26 × 33 mm
+Alignment accuracy	≦ 35 nm
+Throughput	≧ 117 wafers/hour (300 mm wafer, 76 shots)
+NSR-SF130
+Resolution	≦ 280 nm
+NA	0.62
+Exposure light source	i-line (365 nm wavelength)
+Reduction ratio	1:4
+Exposure field	26 × 33 mm
+Alignment accuracy	≦ 35 nm
+Throughput	≧ 120 wafers/hour (300 mm wafer)
+≧ 120 wafers/hour (200 mm wafer)
+NSR-SF120
+Resolution	≦ 280 nm
+NA	0.62
+Exposure light source	i-line (365 nm wavelength)
+Reduction ratio	1:4
+Exposure field	25 × 33 mm
+Alignment accuracy	≦ 35 nm
+Throughput	≧ 100 wafers/hour (300 mm wafer)
+≧ 120 wafers/hour (200 mm wafer)
+NSR-SF100
+Resolution	≦ 400 nm
+NA	0.52
+Exposure light source	i-line (365 nm wavelength)
+Reduction ratio	1:4
+Exposure field	25 × 33 mm
+Alignment accuracy	≦ 45 nm
+Throughput	≧ 80 wafers/hour (300 mm wafer)
+≧ 120 wafers/hour (200 mm wafer)　
+NSR-2205i12D
+Resolution	≦ 350 nm
+NA	0.63
+Exposure light source	i-line (365 nm wavelength)
+Reduction ratio	1:5
+Exposure field	22 mm square to 17.9 (H) × 25.2 (V) mm (6-inch reticle), 20.0 × 20.4 mm (5-inch reticle)
+Alignment accuracy (EGA, |M| + 3σ)	≦ 55 nm
+NSR-TFHi12
+Resolution	≦ 500 nm
+NA	0.30 ~ 0.45 (variable)
+Exposure light source	i-line (365 nm wavelength)
+Reduction ratio	1:5
+Exposure field	22 mm square to 17.9 (H) × 25.2 (V) mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 55 nm
+NSR-2205i14E
+Resolution	≦ 350 nm
+NA	0.63
+Exposure light source	i-line (365 nm wavelength)
+Reduction ratio	1:5
+Exposure field	22 mm square to 17.9 (H) × 25.2 (V) mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 50 nm
+Alignment system	LSA (standard), FIA (standard), LIA (optional)
+NSR-4425i
+Resolution	≦ 700 nm
+Exposure light source	i-line (365 nm wavelength)
+Reduction ratio	1:2.5
+Exposure field	44 mm square
+Alignment accuracy (EGA, |M| + 3σ)	≦ 100 nm
+NSR-2205i11D
+Resolution	≦ 350 nm
+NA	0.63
+Exposure light source	i-line (365 nm wavelength)
+Reduction ratio	1:5
+Exposure field	22 mm square to 17.9 (H) × 25.2 (V) mm
+Alignment accuracy (EGA, |M| + 3σ)	≦ 70 nm
+Alignment system	LSA (standard), FIA (optional), LIA (optional)
+Metrology/Inspection Systems
+Automatic Macro Inspection System AMI-5600/3500/3000 MarkⅡ

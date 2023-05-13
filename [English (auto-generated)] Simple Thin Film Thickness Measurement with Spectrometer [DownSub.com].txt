@@ -1,0 +1,458 @@
+so I'm here in the home ship fab and I
+
+want to show you a pretty simple way to
+
+measure the thickness of thin films that
+
+are on the order of a few nanometers to
+
+a few microns using only an optical
+
+spectrometer that I picked up off eBay
+
+like everything else here and white
+
+light source so before I go into how it
+
+actually works I'll just give you a
+
+quick demo I've got it set up with a 1
+
+centimeter square silicon that I've
+
+coated with about a 750 nanometers layer
+
+of photoresist the photoresist was spin
+
+coated and it's a pretty easy way of
+
+getting a calibration standard with a
+
+liquid of known viscosity and if you
+
+spin it onto the wafer at a known rpm
+
+then you should get a pretty repeatable
+
+thickness in my case I was using this
+
+resist in red which is this trace spun
+
+at about 4000 rpm which gives a film of
+
+roughly speaking here 750 nanometers and
+
+if we go over to a little python script
+
+I wrote right now we're looking at a
+
+bear piece of silicon so it's not
+
+getting the expected spectrum but if I
+
+just use the XY table here and I move
+
+the microscope and position it to look
+
+at the sample we want to analyze we come
+
+back over here and notice there's a
+
+bunch of Peaks it's found those Peaks
+
+with little markers at the maximum
+
+minimum points and then given that
+
+spectra it's done some math which I'll
+
+show you and it said that our films
+
+about eight hundred and twenty
+
+nanometers in thickness which is in
+
+pretty good agreement with the 700
+
+nanometers we expect this is great in
+
+the process of making chips you have to
+
+deposit and etch a number of thin films
+
+of varying thicknesses onto your
+
+substrate for instance when you're
+
+growing an oxide like an insulator onto
+
+the wafer you put it in this furnace
+
+here and you can guess to what the end
+
+point will be based on like the time and
+
+temperature and humidity and everything
+
+like that but there's a lot of factors
+
+and you'll never get it quite right so
+
+it's really nice to actually get a real
+
+qualitative quantitative value rather
+
+and you can stop guessing about some of
+
+these parameters and be more scientific
+
+about it this is a really overkill set
+
+up believe me that most of the stuff
+
+here is not necessary it's just kind of
+
+cluttering the picture here this system
+
+that I use is a wafer probers it's got
+
+these like sharp and you don't point
+
+tips and you can put them on a silicon
+
+wafer to kind of probe it but that's not
+
+important I'm just using it for its
+
+microscope here and kind of stir
+
+debase you could build this with like
+
+some kind of LED lamp and then a
+
+spectrometer for the spectrometer I've
+
+got this ocean optics sts UV visible
+
+spectrometer they're on eBay for like
+
+$400 or so you can get them for a little
+
+less if you're a patient I think and
+
+there are a lot of other options you're
+
+mainly looking to analyze light in the
+
+range of say four hundred to a thousand
+
+nanometers any band of that that's about
+
+400 or 500 nanometers why is good for
+
+these kind of measurements a wider band
+
+is of course a lot better because you
+
+can get more measurements across that
+
+band and and kind of average it so I
+
+have a illuminator that's just like a
+
+halogen light bulb inside this standard
+
+microscope illuminator comes to this
+
+fiber-optic neck gooseneck thing shines
+
+down in axis with the microscope comes
+
+out the objective hits the sample and
+
+then that light comes right back up in
+
+the same axis and some is split off for
+
+the eyepieces of course which isn't
+
+really important and the rest of it goes
+
+into this spectrometer the way this
+
+actually works as it relies on thin film
+
+interference when you look at a silicon
+
+wafer that has a film on it they often
+
+have these beautiful iridescent kind of
+
+shiny colors and that's because the thin
+
+film interference kind of selects these
+
+wavelengths very sharply it's like a
+
+very sharp filter around specific
+
+wavelengths so that's why it gives you
+
+such a brilliant beautiful colors
+
+stained glass windows have a similar
+
+effect but two different different
+
+mechanisms to get these sharp bins of
+
+color
+
+dichroic filters and optics utilize this
+
+and that's why there have a really
+
+really sharp on and off cut in any case
+
+we have a film of some thickness and
+
+different wavelengths will go through
+
+that film or be reflected off that film
+
+with different intensities so that's all
+
+we're measuring here is kind of the
+
+relative intensity of all these
+
+different wavelengths and then if we
+
+have some Python script or whatever that
+
+finds the period of this so you can
+
+select these little markers and that can
+
+be done really simply we just have some
+
+input I'm taking the derivative of it in
+
+the software and then wherever the
+
+derivative crosses zero we have like a
+
+maximum or minimum and
+
+the more of these markers you have you
+
+can kind of average your measurement
+
+over a longer field and get more
+
+accurate measurements we're only picking
+
+up three points here and the fourth one
+
+we're missing for some reason those
+
+software problem but when you know the
+
+period of this kind of sinusoidal egg it
+
+into this formula and you can magically
+
+get the thickness out if you know the
+
+refractive index of the material a
+
+little more precisely what's going on
+
+here is a classic demonstration of
+
+interference you can see in this picture
+
+we have a thin film that represented by
+
+the color red and we have two different
+
+wave lengths so again just for a
+
+simplified demonstration in reality it's
+
+a white light with a spectrum of them
+
+which is pretty important just for
+
+example will consider the blue light
+
+coming on some of those blue photons
+
+bounce off the top surface of the thin
+
+film and some of them go through the
+
+entire thickness of the film they bounce
+
+off the surface of the substrate instead
+
+that means one of the rays of light has
+
+got a longer path length and therefore
+
+with respect to the other one is phase
+
+shifted a little bit
+
+so when both rays come out of the thin
+
+film at roughly the same angle and they
+
+recombined with each other one is
+
+shifted a bit and they can
+
+constructively or destructively
+
+interfere in this example here we can
+
+see destructive interference with the
+
+blue one and constructive interference
+
+with the red one so you can imagine
+
+where the sinusoidal kind of spectra
+
+comes from on our spectrometer so some
+
+of these wavelengths are coming out of
+
+the film unarmed another wavelengths are
+
+kind of being filtered out and old
+
+here's the equation I used to convert
+
+the spectrometer data to usable
+
+thickness measurements you give it n the
+
+refractive index Delta M the number of
+
+Peaks you can count and then lambda 2
+
+lambda 1 or the window in which you're
+
+counting those peaks and nanometers and
+
+microns whatever unit you want theta is
+
+the angle of incidence of the light
+
+going to the spectrometer off the wafer
+
+surface and I can simplify the left-hand
+
+side of this in my case to Delta M over
+
+2 and grab a sample that was coated with
+
+some thicker photoresist that was more
+
+viscous and this in theory is about a 2
+
+micron film 2.0 something so to measure
+
+a new sample I just put it under there
+
+and
+
+we'll move over the XY stage to kind of
+
+focus on the sample we want to look at
+
+the sample is a broken fragment of a
+
+chip I made but it's coated in
+
+photoresist so it's perfect for this
+
+having the eyepiece on this microscope
+
+setup is nice for alignment I can get
+
+like this focus spot and I can measure
+
+the thickness of a film anywhere on it
+
+which is pretty nice
+
+let me head over to the same Python
+
+script before it's correctly identified
+
+like these Peaks and then we can see
+
+that it says the thickness is a little
+
+over two microns which is great
+
+you know that's within the margin of
+
+error of the RPM of my spinny thing the
+
+viscosity of the resist the measurement
+
+error of everything so I'm good with
+
+that
+
+and that shows that it's working quite
+
+well that's about all I have it was kind
+
+of a short video but I hope you enjoyed
+
+it I have a couple more coming up that I
+
+think you'll like and I hope everyone is
+
+staying healthy and safe in these crazy
+
+times I think it's good to be able to
+
+work on things if you can and stay busy
+
+with projects next steps for this are
+
+kind of obvious if I can motorized this
+
+XY stage here or put it on like a 3d
+
+printer or something then I should be
+
+able to make 3d topology maps of a
+
+surface which would be super cool and I
+
+could put away fur in it and see how
+
+uniform the spin coating processes and
+
+compared to like how good it is in
+
+industry which is supposedly on the
+
+order of like angstroms like actually uh
+
+within a few atomic layers across the
+
+wafer surface which is amazing but we'll
+
+see how good I can do it in here so
+
+anyway hope you learn something and
+
+enjoy the video and thanks for watching
+

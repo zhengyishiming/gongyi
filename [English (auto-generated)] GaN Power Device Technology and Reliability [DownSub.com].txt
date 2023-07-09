@@ -1,0 +1,4684 @@
+my name is jan henschel i'm the chair of
+
+this session of this tutorial and i
+
+would like to welcome you to the iedm
+
+2021 in person here in san francisco
+
+and i'm glad that i would like to
+
+introduce you
+
+don't blee he will
+
+giving you this techno this tutorial
+
+about gallium nitride power
+
+tech device technology and reliability
+
+tutorial
+
+dongsubli is a semitone conductor
+
+technologist
+
+he is currently working at texas
+
+instruments
+
+and
+
+he joined texas instruments
+
+in 2014
+
+and works
+
+more
+
+or since then on the 600 world gallium
+
+nitride technology development and the
+
+reliability improvements as well as the
+
+successful qualification and
+
+productization of those technologies for
+
+their products
+
+he received the electrical engineering
+
+degree
+
+from the national university in seoul
+
+korea
+
+and he holds a phd from the mit which he
+
+completed in 2014
+
+he
+
+researches our various
+
+main field is in these of course
+
+semiconductor devices but also simuls
+
+advanced cmos and tunneling fets and he
+
+is author of numerous papers and also
+
+and
+
+[Music]
+
+served several
+
+technical communities
+
+and conferences as a technical member
+
+so welcome you and
+
+looking forward to talk
+
+uh thank you for introduction uh
+
+[Music]
+
+hello everyone uh welcome to idm
+
+tutorial game power device technology
+
+and reliability uh my name is tong
+
+sobley from texas instrument
+
+and before starting this tutorial i
+
+would like to first thank ibm committee
+
+for giving me this opportunity
+
+so today i have three goals
+
+first i would like to provide a general
+
+overview of galvanized trade power
+
+devices for people who are not familiar
+
+with this technology
+
+and then we'll review the keto live
+
+topics in this device
+
+it's a relatively new technology
+
+understanding potential reliability
+
+issues and developing innovative
+
+solutions are very critical for
+
+successful technology qualification and
+
+commercialization
+
+and finally we'll review the recent
+
+progress of this technology which can
+
+give us some idea how the future gained
+
+electronics will look like
+
+so this is the outline of my talk so
+
+after a brief introduction on the
+
+gallium nitride and its benefits we'll
+
+first cover the basics of the gantt
+
+devices including the gen fb device
+
+structure and device operation
+
+and then based on that background i will
+
+see that what kinds of potential
+
+reliability can happen in this device so
+
+we'll start with the intrinsic device
+
+level and move to the application level
+
+reliability
+
+and lastly i will review the recent
+
+innovations which can push the again
+
+electronics to the next level
+
+so let's start so why should we use a
+
+gallium nitride we can first check the
+
+benefits of the gallium nitride and the
+
+point of material properties
+
+so if you see the right table
+
+is a wide bandwidth semiconductor with a
+
+high critical electric field is about 10
+
+times higher than silicon and also
+
+electromobility is also quite high
+
+and this combination high critical
+
+electric field and high electromobility
+
+makes this material very promising for
+
+high power for high frequency devices
+
+and in addition to the excellent
+
+electrical properties the thermal
+
+conductivity of the gallium nitride is
+
+as good as the silicon which is also
+
+very important for devices handling high
+
+power
+
+and manufacturability and costs are
+
+always the main concern for new devices
+
+and new materials
+
+but thanks to the success of the led
+
+industry these concerns are much less in
+
+gallium nitride and the cost gap between
+
+the gallium nitride and silicon is
+
+continuously decreasing thanks to wafer
+
+scaling
+
+and how these benefits can be reflected
+
+to the actual device performance
+
+to help your understanding i put simple
+
+circuit model for power device so in
+
+addition to the device dc resistance
+
+there are a couple of important ac
+
+parameters for power devices for example
+
+the input capacitance cg of capacitance
+
+coss and also reverse recovery charge
+
+qrr
+
+and first thanks to high critical
+
+electric field can device can support
+
+the higher voltage with a smaller device
+
+dimension and with a combination of a
+
+high electron mobility the smaller
+
+device dimension reduces the on
+
+resistance which is a helpful for
+
+conduction loss reduction
+
+and also the input and our capacitances
+
+are scaled with over device size and
+
+also with our rsp
+
+this is because we can reduce the total
+
+device width to meet the same rds on
+
+so low input and capacitances reduce the
+
+switching loss and also make it possible
+
+to operate this device at higher
+
+frequency
+
+and also different from conventional
+
+silicon power devices there is no body
+
+diode in gallium nitride so there is no
+
+reverse recovery loss associated with
+
+the body diode and it reduces the
+
+ringing in the switching node and also
+
+opens up a possibility for new circuit
+
+policies
+
+so thanks to all these benefits gallium
+
+nitride technology can take multiple
+
+power to previously on achievable
+
+frequency range and power density so if
+
+you see this feature
+
+it shows the potential gain market in
+
+power and frequency domain
+
+and is intersecting the emerging
+
+multi-billion dollar market for
+
+electrification of the non-traditional
+
+applications such as the grid
+
+infrastructure and the automotive
+
+and this
+
+is a one example to show the benefit in
+
+the of the gallium nitride technology in
+
+power supply design so it's an
+
+end-to-end power conversion from the ac
+
+power line to the point of load
+
+so in the first stage the temple pfc can
+
+provide more than 99
+
+efficiency with about three times higher
+
+power density than conventional silicon
+
+solutions
+
+and also the following lsc and the
+
+single-stage converter also outperformed
+
+the silicon solutions by far in terms of
+
+frequency and power density
+
+so as you can see in this example the
+
+gan technology can push the performance
+
+of the power system significantly which
+
+drives fast and widespread market
+
+adoption so this is from the this year's
+
+geology report so the gan market in 2020
+
+i was expanded by about two times
+
+compared to the 2019
+
+and the main market penetration i just
+
+started in consumer electronics such as
+
+laptop or smartphone chargers and also
+
+the adoption in other areas such as data
+
+center telecom and ultimately automotive
+
+is expected to grow continuously as you
+
+can see in the projection
+
+so there is very high level overview of
+
+gallium nature technology and now we're
+
+going to zoom in and try to understand
+
+the basics of the organ device
+
+so we can start with the crystal
+
+structure so the gallium nitride crystal
+
+structure is uh
+
+ultras and as you can see in this left
+
+figure the gallium and nitrogen atoms
+
+are arranged in a closely spaced
+
+hexagonal by layers if the gallium is on
+
+top of the bilayer it is called as a
+
+gallium phase if nitrogen is at the top
+
+is called as a nitrogen phase
+
+and typically the gallium phase is
+
+mainly used for power devices because
+
+it's much easier to grow and process
+
+and one of the unique characteristics in
+
+gallium nitride is a polarization
+
+so gallium and nitrogen atoms form ionic
+
+bonding and the shared electrons in the
+
+bonding are asymmetrically distributed
+
+because of the large difference in the
+
+electronegativity between the gallium
+
+and nitrogen as you can see in the
+
+polling scale table
+
+and since this ultra crystal structure
+
+does not have an inversion symmetry the
+
+asymmetric charge distribution in each
+
+bonding does not cancel out and forms a
+
+net flygation field
+
+in the gallium phase the polygon field
+
+direction is downward
+
+and the nitrogen phase is upward
+
+direction
+
+and this polarization field plays a very
+
+important role in gan device and we're
+
+going to uh in the after few slides
+
+so if you see the actual epi structure
+
+used for high voltage power devices it
+
+has a multiple layers
+
+so if you start with from the bottom
+
+first we need a substrate so if you have
+
+a pure gallium nitride substrate it's
+
+much easier to grow
+
+high quality thick gallium nitride but
+
+unfortunately there are still many
+
+technical challenges to grow the high
+
+quality and large scale gallium nitrite
+
+substrate with low cost
+
+so people typically use the holding
+
+substrate such as a silicon sapphire or
+
+silicon carbide and silicone is the most
+
+popular choice especially for power
+
+devices because of its low cost and the
+
+scalability
+
+but we cannot grow the high quality
+
+gallium nitride directly on top of the
+
+silicon substrate because there is a
+
+vertically large lattice constant
+
+mismatch so if you see this center
+
+figure
+
+there is about 15
+
+lattice constant mismatches between the
+
+silicon and the gallium nitride and also
+
+there is relatively large difference in
+
+the summary expansion coefficient
+
+so to grow the gallium nitride on top of
+
+the silicon substrate we first need to
+
+put the aluminium nitrite nucleation
+
+layer as a foundation and also need we
+
+need to put relatively thick buffer
+
+so there are two main roles of these
+
+buffer layers uh first
+
+it reduces the impact of the mismatch of
+
+the lattice constant and the sum are
+
+mismatched
+
+and also it blocks the high voltage in
+
+the vertical direction
+
+so in terms of the buffer layer design
+
+there are two main types the first one
+
+is a step grade the argon buffer
+
+so on top of the aluminum nitride we
+
+start with a higher aluminum percent
+
+elegant layer
+
+and gradually reduce the aluminium
+
+percent through multiple steps so that
+
+we can reach the gallium nitride
+
+another option is a super lattice which
+
+alternates the aluminum nitride and
+
+gallium nitride for aluminum nitride and
+
+aluminium gallium nitride
+
+so once the buffer growth is done the
+
+next step is the back barrier
+
+the purpose of the back barrier is to
+
+suppress the vertical or lateral liquid
+
+current
+
+so if you grow the gallium nitride
+
+without any doping
+
+the gallium nitride tends to become weak
+
+n-type
+
+this is because the silicon or oxygen
+
+which are present in the epi chamber are
+
+good n-type dopants for gallium nitride
+
+so if you grow just the undoped gallium
+
+nitride the fermi level is closer to the
+
+close to the firm conduction band so
+
+under high
+
+voltage stress the electron electrons in
+
+the channel can spill over to the buffer
+
+and cause a large letter or vertical
+
+liquid current
+
+so to compensate the anti-dopant effect
+
+the carbon is mainly used as a deep
+
+acceptor
+
+so if you dope the back better with the
+
+carbon now the fermi level is pinned at
+
+the carbon level which is about 0.7 eb
+
+from the balance band
+
+so as you can see in this figure the
+
+entire band is raised which can provide
+
+a better charge confinement so it can
+
+reduce the vertical and lateral liquid
+
+current
+
+because of the similar reason we also
+
+use the carbon as a for the buffer
+
+doping
+
+it reduce the background carrier density
+
+by compensating the antibiotics in the
+
+back in the buffer layers so if you see
+
+the this center figure with increasing
+
+the carbon level in the buffer we can
+
+effectively suppress the vertical
+
+leakage current across the buffer layers
+
+but in spite of this benefit we cannot
+
+keep increasing the carbon level in the
+
+back barrier or the buffer layer because
+
+first if if you increase the carbon
+
+level too much it reduces it degrades
+
+the crystal quality of the gallium
+
+nitride and also if the highly carbon
+
+layer is too close to the channel it can
+
+cause a severe electron trapping
+
+moreover
+
+if the carbon level goes above a certain
+
+threshold it can cause it can also flip
+
+the leakage versus the carbon trend so
+
+if you see this is the right feeder
+
+up to about 19 per cubic centimeter the
+
+increasing carbon is helpful for the
+
+breakdown voltage improvement
+
+but within if the carbon level goes
+
+above the above 919 where i close to the
+
+120 now the trend is flipped and we
+
+start to see the degradation of the
+
+liquid current
+
+so the carbon level optimization is one
+
+of the key design parameters for high
+
+quality of the design
+
+so once the back better growth is done
+
+now the next step is the typefactory
+
+structure
+
+for gallium nitride channel we typically
+
+don't do any doping to maximize electron
+
+mobility and also minimize the number of
+
+traps and the gallium nitride channel is
+
+capped with the argon barrier
+
+so the lattice constant of the argon
+
+barrier is smaller than the gallium
+
+nitride
+
+so if you grow the aluminum gallium
+
+nitride on top of gallium nitride
+
+pseudomotically the top eigenvalue gets
+
+a tensile stress
+
+and here the polarization field that we
+
+discussed in the crystal structure part
+
+plays a very important role
+
+so first
+
+both gallium and aluminum gallium
+
+nitride have a spontaneous polarization
+
+field coming from the woodside crystal
+
+structure
+
+and on top of that aluminium gallium
+
+nitride has a piezoelectricalization
+
+caused by the strain
+
+so if you draw the nebulization charges
+
+across the header structure you can find
+
+that there is very strong electric field
+
+in diagram barrier
+
+and because of this high electric field
+
+the surface donor states can be
+
+activated and electrons coming out of
+
+the donor states can fall down to the
+
+gallium nitride following the electric
+
+field and these electrons can be
+
+accumulated at eigengan interface
+
+so these accumulated electrons are
+
+called as a two dimensional electron gas
+
+shortly to that and it is used as a main
+
+channel in gan device
+
+since the origin of the two deck channel
+
+is the pollution field in the argon
+
+barrier
+
+its electron density is also determined
+
+by the argon barrier design
+
+for example by increasing the aluminium
+
+percent in the argon barrier or by
+
+thickening the eigen thickness we can
+
+increase the two deck density so typical
+
+trade density level is about 13 per
+
+square centimeter which is pretty high
+
+in addition to the high electron density
+
+the electron mobility is also quite high
+
+in the gallium nitride if you see this
+
+the right figure the gallium natural
+
+birth mobility is mainly limited by the
+
+impurity scattering
+
+but in the case of the two deck channel
+
+thanks to the separation between the
+
+donor states and the two deck channel
+
+the impurity scattering is much less so
+
+the electron mobility can be as high as
+
+over 2000 at room temperature
+
+so once the epi growth is done now we
+
+can fabricate the device only and this
+
+left figure shows a typical again device
+
+structure
+
+so first thing you can notice is that
+
+it's a leather device so current flows
+
+electrically through this two deck
+
+channel
+
+and again in the gain channel there is
+
+no pn junction so typically for again
+
+device fabrication people do not use the
+
+implantation for additional doping
+
+there are a couple of reasons for that
+
+first the high electromobility channel
+
+is formed automatically during the
+
+epigraphs so there is no need to form
+
+additional doped layer for electron
+
+supply
+
+and also even though you want to do
+
+additional doping with the implantation
+
+is quite challenging to activate the
+
+dopants and the cure the
+
+implantation damage it requires about 12
+
+to 13 degrees c on yielding temperature
+
+which can affect overall peak quality
+
+and also other process conditions
+
+since there is no pn junction in the
+
+gantt in game device which is used to
+
+block high voltage in combustion or
+
+silicon power devices the gan device
+
+relies on multiple field flights for
+
+high electric field engineering
+
+so in this device you can find the three
+
+uh field plates so one gate connected
+
+field plate and two source connected
+
+field plates
+
+and we're going to talk about these
+
+field plates a little more when we
+
+discuss the device operation
+
+lastly the gan device is a naturally
+
+depletion mode device
+
+since the two deck channel is formed
+
+automatically during the epic growth
+
+the channel is formed under the gate
+
+without any gate bias but in other words
+
+to shut off the device we need to apply
+
+negative capabilities which is actually
+
+not desirable for power devices because
+
+it raises concern for safety and device
+
+controllability
+
+so to make a normally off or enhancement
+
+mode device we need additional
+
+engineering in gate area
+
+so there has been extensive research to
+
+make a stable enhancement mode again
+
+devices so here we can review the three
+
+different approaches
+
+the first one is the argon barrier
+
+recess
+
+the origin of the two deck channel is
+
+the collision field in the argon barrier
+
+so by removing the argon barrier
+
+partially or completely under the gate
+
+we can kill the two deck under the gate
+
+and make the investment mode device
+
+so this approach is most straightforward
+
+but there are a couple of process
+
+challenges
+
+first
+
+threshold voltage can be dependent on
+
+the remaining ibm barrier but this
+
+control is not easy it's a time get
+
+and also during this edge process
+
+the mobility under the gate can be
+
+degraded due to the plasma damage
+
+second approach is to introduce the
+
+negative eye
+
+charges under the gate
+
+for as an example uh you can expose the
+
+gate area to the flowing plasma and
+
+fluorine ions can be implanted in the
+
+argon barrier and the negative charges
+
+of the fluorine ions can deplete the
+
+truth channel under the gate
+
+so this approach is interesting but
+
+there also there is some concerns
+
+so first
+
+the threshold voltage can be dependent
+
+on the amount of the flowing ions
+
+implanted and activated in diagon
+
+barrier which is relatively thin
+
+and also there is some concern about the
+
+stability of the implanted fluid ions
+
+during the high temperature process or
+
+long-term operation
+
+the last approach is the p-gan on top of
+
+the galagan barrier
+
+so if you grow the peak and on top of
+
+the eigenvalue now the entire gate
+
+structure is like a pn junction
+
+so the for the built-in potential
+
+difference between the p-gan and the
+
+n-type channel can raise the band and it
+
+depletes the true deck channel under the
+
+gate
+
+so since the pgan is a pig and growth is
+
+done during the epi growth
+
+this approach can have a better
+
+threshold voltage controllability
+
+compared to the other approaches
+
+and until now the digital protein is
+
+winning so most of the commercial
+
+investment model devices use this p gain
+
+gate structure
+
+so here we can review the main device
+
+configurations in current game market
+
+so both e-mode and demos are present
+
+and these first two device
+
+configurations use the depletion mode
+
+again device but users don't need to
+
+take care of the negativity issue
+
+so in the first device configuration
+
+depletion mode gain device is connected
+
+to the silicon flap
+
+in series like a cascode an entire chip
+
+is controlled by the silicon device
+
+whose vt is positive
+
+second in the second configuration the
+
+silicon gate driver is co-packaged with
+
+a depletion mode gain device and this
+
+integrated gate driver generates a
+
+negative voltage and drives a depletion
+
+mode game device the third one is
+
+a standalone enhancement mode device and
+
+the first one is very similar to the
+
+second one but again device is in
+
+estimate mode
+
+in the first or the third configurations
+
+the separate gate drivers are needed
+
+while in the second and first options
+
+the gate drivers are already integrated
+
+so now we can check the device operation
+
+so there are three main operation modes
+
+so in the first one is the forward
+
+conduction mode which is basically on
+
+state so in the honest state the device
+
+own resistance is most important which
+
+determines the conduction loss
+
+second operation mode is a reverse
+
+conduction mode which is also called as
+
+a third quadrant
+
+so in this state the gate source voltage
+
+is below threshold voltage but the drain
+
+voltage goes to the negative value so
+
+the channel can be turned on because
+
+gate drain voltage is our threshold
+
+voltage
+
+since device is in saturation mode in
+
+the reverse conduction mode the source
+
+drain voltage to flow the required
+
+switching current determines the
+
+conduction loss
+
+in the off state high voltage blocking
+
+high voltage blocking is the most
+
+important obviously
+
+so now we can check the inside of the
+
+again device in each operation mode
+
+so to help your understanding is
+
+compared with the conventional
+
+particular silicon power devices
+
+first in the forward conduction mode
+
+there is nothing
+
+special
+
+so in the silicon device the current
+
+flows vertically through the end drip
+
+and the inverted channel in gan device
+
+current flows laterally through to this
+
+two deck channel
+
+but there is a clear difference in the
+
+third quadrant or reverse conduction
+
+mode between these two devices
+
+in the silicone power device the first
+
+time the reverse conduction mode channel
+
+is off
+
+and as drainable scores the negative
+
+value the body diode between the p body
+
+and then drift a tonsil so current flows
+
+through this body diode
+
+so the current path between the forward
+
+conduction mode and the reverse
+
+conduction mode is different
+
+on in-game device there is no body diode
+
+so now the drain voltage has to go to
+
+more negative values to turn on the
+
+channel so once the gate drain voltage
+
+becomes above the threshold voltage now
+
+the channel is on so the current flows
+
+it is to that channel again but now the
+
+conduction reaction is opposite
+
+since the threshold voltage of the
+
+gallium nitride device is generally
+
+higher than the body tone and voltage
+
+the conduction loss in the reverse
+
+conduction mode can be higher in the
+
+gain device
+
+so in gain circuit design it's important
+
+to minimize this reverse conduction mode
+
+time to minimize the efficiency
+
+degradation
+
+the way to block the high voltage in the
+
+off state is also different between
+
+these two devices
+
+in the silicon power device the p body
+
+and end drift is reverse biased and this
+
+reverse p and bias pn junction is the
+
+way to block high voltage
+
+but in game device the high voltage
+
+blocking is done by this multiple field
+
+plates
+
+so field plates are basically the
+
+multiple gates with the different
+
+negative threshold voltages
+
+and these field plates are connected to
+
+the gate or source which are zero
+
+voltage in the off state
+
+so if you see this right figure
+
+in the off state first gate is off so
+
+channel the electrons under the gate are
+
+depleted
+
+and as the drain voltage increases the
+
+potential difference between the first
+
+field plate and channel reaches the
+
+threshold voltage of the first field
+
+plate so the electrons under the first
+
+field plate are depleted so is it like a
+
+shutting off the gate
+
+so once this happens now the hydrogen
+
+voltage cannot go into the inner device
+
+region and is blocked by this field play
+
+until the next field played effect kicks
+
+in
+
+the next field plate has can block the
+
+higher voltage because it has a more
+
+negative threshold voltage because of
+
+the thicker dialect film
+
+so by putting multiple field plates in
+
+series we can increase the maximum
+
+blocking voltage
+
+and here there is an important
+
+difference in electric electric field
+
+distribution between these two devices
+
+in silicon device the high electric
+
+field is mainly handled inside of the
+
+silicon
+
+but in gan device main electric field
+
+lines come out of the gallium nitride
+
+and go through the dialect films
+
+so because of that the dialect film
+
+reliability is very important in gan
+
+devices and we're going to see it in the
+
+following reliability section
+
+so until now we reviewed the basics of
+
+the again devices and now we're going to
+
+see what kinds of potential reliability
+
+issues can happen in this device
+
+so we'll first see the intrinsic device
+
+level covering three important topics uh
+
+tddb time dependent dialect breakdown
+
+the threshold voltage instability and
+
+the dynamic rds zone
+
+so reliability is always the main
+
+concern for new devices
+
+but every device has a failure mode
+
+so this electric figure describes the
+
+main reliability issues in conventional
+
+silicon devices
+
+the first one is threshold voltage
+
+instability which is also called as a
+
+bti
+
+the second one is a heart care effect so
+
+hot carriers can be generated under high
+
+drainabilities and can damage the divide
+
+through the impact ionization
+
+and also the trapping or dialect
+
+breakdown of gate oxide are also
+
+important relief issues in silicon
+
+mosfets
+
+and the gan device is nothing different
+
+from silicon mosfet we are seeing pretty
+
+much similar failure modes in this
+
+device
+
+in the gate area the threshold voltage
+
+instability or the gate breakdown can
+
+happen
+
+and also in the dialect film where the
+
+gallium nitride that be the strong the
+
+high electric field from the drain can
+
+cause electron trapping or breakdown
+
+issues
+
+so what we need to do is to understand
+
+these potential degradation modes and
+
+engineer the device and process properly
+
+to meet the required reliability
+
+lifetime
+
+so let's first check the time dependent
+
+dialect breakdown shortly tdd
+
+so tdb occurs in polar materials under
+
+high electric field
+
+and the dialect films used in the
+
+semiconductor process such as a silicon
+
+oxide or silicon nitride are polar
+
+materials
+
+and as you reviewed in the crystals
+
+structural part the gallium nitride also
+
+has a polar material property
+
+so once these materials are exposed to
+
+the high electric field the lattice gets
+
+strained
+
+and the defects can be formed
+
+and once the defects form the
+
+percolation path along the field
+
+direction
+
+now the catastrophic dialect breakdown
+
+can happen with the large leakage
+
+current
+
+and the damage caused by the time
+
+dependent dialect breakdown is not
+
+recoverable
+
+so in game device there are a couple of
+
+reasons that we need to check the tdp
+
+issue
+
+first in the on state especially the in
+
+enhancement mode device under positive
+
+gate voltage the gate that is exposed to
+
+the vertical electric field
+
+so we need to check the onstate ktdb
+
+in the off state more regions are
+
+exposed to a strong electric field
+
+because of the high drainabilities for
+
+example the dialect film near the field
+
+plate and also the gallium nitride fe
+
+so let's first tap on stage htdp in the
+
+emo device
+
+but for that we need to understand this
+
+gate structure
+
+so if you see this left figure the
+
+p-type gallium nitride doped with the
+
+magnesium is grown on top of the argon
+
+barrier and the gate metal is directly
+
+set as on the
+
+p-type gallium nitride
+
+and depending on the contact property of
+
+this gate metal the way that this gate
+
+structure operates can be changed
+
+if the gain metal forms are only context
+
+to the pgand now this gauge structure
+
+can be simplified as a series connection
+
+of the resistor and heterojunction pn
+
+diode
+
+so under positive gate voltage there is
+
+a negligible voltage drop in this
+
+register part which is basically the
+
+p-gan gate junction and most of the
+
+voltage is applied to this parameter
+
+junction which is argon barrier
+
+so in the ome contact-based gate
+
+structure the onstage tdb is mainly
+
+determined by the argon barrier
+
+reliability
+
+on the other hand if the game metal
+
+forms are shocking contact to the pgan
+
+now this gate structure becomes like a
+
+back-to-back connected diodes
+
+so under positive gate voltage this
+
+top junction becomes a reverse biased
+
+shock junction while the bottom junction
+
+is forward biased
+
+since the voltage drop occurs in both of
+
+the reasons the maximum voltage that we
+
+can apply is higher in this shocky
+
+contact-based gate structure
+
+and also thanks to this reverse biased
+
+shock junction the gear leakage current
+
+is much lower in this shaky contact case
+
+structure
+
+so if you see the energy band diagram
+
+first under the zero gate bias there is
+
+no electron at the eigengan interface
+
+and the formula level is aligned to the
+
+magnesium level in the p-gap
+
+so magnesium level is about 0.2 eb from
+
+the balance band and this is about
+
+roughly about 10 times higher than the
+
+thermal energy at room temperature
+
+so about one percent of the magnesium
+
+dopants can be activated in this
+
+quadratic neutral pigeon region
+
+so typical peak and doping level is
+
+about 1 in 19 per cubic centimeter so
+
+effective whole density is about one is
+
+17 ish
+
+so once you apply the positive gate
+
+voltage now of course the gain metal and
+
+p gain junction is a reverse bias
+
+so holes in the topic and junctions are
+
+depleted
+
+and in this depletion reason different
+
+from the quadratic neutral region now
+
+almost 100 percent maximum dopants can
+
+be activated because of the this energy
+
+band bending
+
+so the surface electric field can be
+
+quite high
+
+and holes coming from the depletion
+
+region are now accumulated at argan
+
+pigeon interface and these positive
+
+charges attract the electrons in the on
+
+the other side and are gonna interface
+
+so this is how the two deck channel is
+
+formed under the positive voltage
+
+so as you can see in this band structure
+
+the voltage drop occurs in top peak and
+
+junction as well as argon barrier so
+
+when we study the
+
+onstage http in the shocky content-based
+
+emo device both of the reasons
+
+need to be considered
+
+so there has been extensive research to
+
+improve the on-state gate tdb
+
+in emo device especially the shocking
+
+contact-based emo device and most of the
+
+research here focused on the top shock
+
+junction because that's where high
+
+electric field exists and also the
+
+electron current or the leakage current
+
+is limited
+
+so if you here we can review the three
+
+different approaches
+
+so first
+
+the undocked gallium nitride is grown on
+
+top of the peak and layer
+
+and thanks to the lower doping level now
+
+the surface electric field is reduced so
+
+the
+
+maximum gate voltage margin is improved
+
+by more than three volts as you can see
+
+in this bottom figure
+
+in the second approach now the n-type
+
+gallium nitride is grown on top of pecan
+
+so in this structure now top sharky
+
+junction is changed to the pn junction
+
+generally the pn junction can provide
+
+more uniform and lower electric field
+
+than the shaky junction
+
+so the ktdp lifetime is improved
+
+significantly with of a few older
+
+driving making to the galaxy current
+
+reduction
+
+in the last approach the gallium oxide
+
+nitride is formed by oxidizing the peak
+
+and surface
+
+the gallium oxide nitride has a slightly
+
+larger energy band gap and also the
+
+better material stability so it can
+
+provide the better a longer tdb lifetime
+
+as well as
+
+lower gear leds as you can see in this
+
+feature
+
+so now we can move to the off state td
+
+ratio so in the off state
+
+one of the key reasons that we need to
+
+think about is the dialect films near
+
+the field plates
+
+so if you see this figure in the off
+
+state the electrons in the channel are
+
+depleted which expose the particle
+
+pollution charges
+
+so the electric field is formed between
+
+these positive charges and the field
+
+plate
+
+and especially the electric field is
+
+very high near the field plate that's
+
+because of the field concentration
+
+the tk simulation shown in this bottom
+
+figure also confirms the high electric
+
+field in the field gate field blade edge
+
+and this right figure shows the actual
+
+failure analysis of the device which
+
+failed during the high voltage offset
+
+stress
+
+so this is a gate and you can also see
+
+the med1 and metal field plane and if
+
+you zoom in this gate area you can
+
+clearly see that the failure started
+
+from the gauge field blade edge and the
+
+main field failure direction is also
+
+aligned to the field direction
+
+so to prevent this dialect film
+
+breakdown near the field plate we need
+
+to optimize the field plate and the fb
+
+so in terms of the field plate design uh
+
+the
+
+transition from the one field plate to
+
+the next field plate uh has to gradual
+
+enough to suppress any exterior electric
+
+field crowding
+
+and also we need to use the high quality
+
+dialect film to maximize the dialect
+
+film lifetime under high electric field
+
+and in terms of the ip design tool deck
+
+density is quite critical
+
+so high to that density is good for
+
+device own resistance but bad for tddb
+
+so when we design the heterostructure
+
+these two computing factors has to be
+
+balanced
+
+another reason that we need to check the
+
+tddb in the off state is the gallium
+
+nitride b
+
+in typical gantt device configuration
+
+the substrate is grounded so there is a
+
+vertical electric field between the top
+
+side drain channel
+
+and the substrate
+
+so for example if the 600 volt is
+
+applied to the drain and the gallium
+
+nitride of the thickness is a 2 micron
+
+the average electric field across the
+
+gannet is about 3 megavolts per
+
+centimeter
+
+so this value is still lower than the
+
+critical electric field of the gallium
+
+nitride which is about 3.4 ml per
+
+centimeter
+
+so you may not see that instant device
+
+breakdown
+
+but if you leave the device under this
+
+stress for enough time device will
+
+eventually fail before meeting the
+
+required reliable time
+
+and this is because
+
+the gallium nitride also has the tdw
+
+issue
+
+so in other words we cannot design the
+
+gallium nitride epi thickness just based
+
+on the critical electric field
+
+so to find the tar the appropriate epi
+
+thickness for target operation voltage
+
+we need the actual ftd modeling and
+
+people typically use voltage or
+
+temperature acceleration
+
+and this tdd gain gallium nitride ftd
+
+mechanism is one of the key factors to
+
+determine the maximum voltage capability
+
+of the gan device
+
+so in this aspect
+
+we can think about the theoretical limit
+
+of the gallium nitride
+
+so polygon figure merit is widely used
+
+to evaluate the potential of
+
+semiconductor materials especially for
+
+power devices
+
+and it's mainly determined by the
+
+mobility and the critical electric field
+
+but in the case of the gallium nitride
+
+this theoretical limit only reflects the
+
+time zero performance because gallium
+
+nitride has a tddb issue
+
+so in other words the maximum electric
+
+field to meet the required level
+
+lifetime can be lower than the critical
+
+electric field
+
+so it is very challenging to push the
+
+gantt device to the theoretical limit
+
+and this need to be considered in the
+
+actual device design
+
+so now let me move to the second
+
+reliability issue which is a threshold
+
+voltage instability
+
+so let me start with the real basic so
+
+this left figure shows a transfer curve
+
+so the black curve is from the fresh
+
+device so with all state capabilities
+
+the own current is high
+
+and with offstage capabilities leakage
+
+current is low
+
+so now let's see what happens there if
+
+there is a negative weight shift which
+
+is the red curve
+
+we don't have any problem in the own
+
+state but in the off state now the
+
+leakage current is increased
+
+significantly
+
+so what's the problem in actual circuit
+
+so if you see the typical half reaches
+
+circuit and if you assume the high side
+
+phase is on and low side fade is off and
+
+if there is a negative relationship
+
+issue in the low side fat
+
+now the low side back cannot block the
+
+high voltage so there can be a large
+
+liquid current which can increase the
+
+conduction loss and if it becomes
+
+serious it can also cause a shoot
+
+through issue and also it can cause a
+
+short circuit event which can damage the
+
+entire system
+
+then how about the positivity shift so
+
+if you see the blue curve now we don't
+
+have any problem in the off state but
+
+now in the on state the own current is
+
+reduced because of the reduction of the
+
+gate over drive
+
+so in the same circuit now we have a
+
+problem in the high side fat because the
+
+increase the increase of in the device
+
+resistance can increase the conduction
+
+loss
+
+so in the depletion mode device with the
+
+gate dielectric the negativity to shift
+
+is the main concern
+
+so if you see this left figure the fresh
+
+device shows about minus two volts vt
+
+but after a negative gate voltage stress
+
+vt becomes more negative
+
+so the longer stay longer stress time
+
+makes the vt uh
+
+the amount of the weight shift larger
+
+and also it is accelerated by the higher
+
+temperature
+
+and also high drain voltage kind of
+
+affect this negative shift so if you see
+
+this right figure after high voltage
+
+high drain voltage stress the transfer
+
+curve is shifted from the red curve to
+
+the blue curve
+
+so the multiple factors can trigger this
+
+negatively to shift the gate or
+
+drainable stress longer stress time and
+
+higher temperature
+
+so there has been extensive research to
+
+understand this
+
+mechanism of this negative shift
+
+so one possible explanation is the donor
+
+states at eigen dialect interface
+
+can be activated under gate or drain
+
+voltage stress
+
+and
+
+this effect can provide a positive
+
+charge effect in this location which
+
+attracts the more electrons at
+
+gun interface so this can cause a
+
+negativity to shift
+
+another explanation is also related to
+
+donor states but the location is not
+
+argon dialect interface but in the
+
+gallium natural channel or in back
+
+barrier reason
+
+but similar to the
+
+surface donor states once these donor
+
+states in the gantt channel are
+
+activated it provides the fixed positive
+
+charge effect which causes a negative
+
+weight to shift
+
+lastly the holes generated under high
+
+drain voltage stress can flow into the
+
+external area following the electric
+
+field and get injected into the gate
+
+area and cause a negatively shift
+
+and this negativity shift
+
+is one of the key reasons why it's very
+
+challenging to make a stable inesman
+
+model operation with a gate dielectric
+
+so in this study the trigate again
+
+devices were fabricated with two
+
+different gauge structures
+
+so in the first device the aluminium
+
+oxide oxide aluminum oxide was used as a
+
+gate oxide so the gas structure is like
+
+a typical mis structure
+
+so in this device especially at room
+
+temperature the vt is quite positive
+
+thanks to this trigger structure
+
+so although there is some hysteresis vp
+
+is close to zero so you can call it as
+
+effectively as the initial mode device
+
+but if you go to the higher temperature
+
+and do the forward and reverse bias
+
+sweep you can clearly see that there is
+
+a large negativity to shift
+
+so even though at time zero it can be
+
+recorded as a investment mode device but
+
+after the stress
+
+it becomes a depletion mode device
+
+but now in the second device this
+
+aluminum oxide was replaced by the
+
+p-type nucleoxide
+
+since this is a p-type oxide now the
+
+gate structure is like a p-n junction
+
+and in this device the negative way to
+
+shift is significantly suppressed
+
+and this data may explain why we are
+
+seeing more stable enhancement mode
+
+operation with a pgan-based
+
+gate structure and compared to the other
+
+enhancement mode approaches with the
+
+gate dielectric
+
+now we can move to the
+
+threshold voltage instability in the
+
+e-mode device
+
+so e-mode device gauge structure is a
+
+little more complex than the d mode so
+
+especially though when the gain metal
+
+forms a sharpie contacts with the keygen
+
+the gate structure is like a backpack
+
+connected to the diodes
+
+and this can be modeled as a series and
+
+parallel connection of a
+
+voltage-dependent resistor and
+
+capacitors
+
+so in the case of the top junction is a
+
+reverse biased shock junction so the
+
+resistance is determined by the reverse
+
+bias liquid current in this stop sharky
+
+junction and the capacitance is the top
+
+peak and depletion capacitance
+
+in the case of the bottom junction the
+
+resistance is mainly determined by the
+
+forward bias current
+
+and the capacitance is a series
+
+combination of the eigenvalue
+
+capacitance and the gallium nitride
+
+depletion capacitance
+
+and most importantly this center node
+
+which is a pgam is a kind of floating
+
+and this can cause various dynamic
+
+effects
+
+for example if you do the transfer curve
+
+sweep with a very short pulse the
+
+initial pigeon potential can be affected
+
+by the pre-sweep condition
+
+so if you see this bottom left figure
+
+before the sweep the positive gate pulse
+
+stress was applied
+
+and the accessible holes accumulated in
+
+the peak and during this positive gate
+
+voltage stress affect the peak and
+
+potential and cause the only device
+
+tunnel
+
+so if you see the center figure compared
+
+to the transfer curve measured with the
+
+dc setup
+
+the parse transfer curve after the
+
+positive gate voltage stress shows more
+
+negativity
+
+but if you use a longer purse or wait
+
+for enough time the excessive holes in
+
+the pgam can be consumed and the gap
+
+between the first measurement and the dc
+
+measurement is reduced
+
+so because of this dynamic effect
+
+the amount of the vt shift can be also
+
+dependent on the measurement setup in
+
+this p-gang gate structure
+
+in addition to the pure dynamic effect
+
+there is also trap-induced vt shift
+
+so this left figure monitors the
+
+threshold voltage as a function of
+
+stress time under different gate voltage
+
+conditions
+
+when gate voltage is a relative low we
+
+typically observe the positive vt shift
+
+which is due to the electron trapping at
+
+eigengan interface
+
+but if you increase the gate voltage
+
+further we start to see the negativity
+
+shift due to the whole trapping where
+
+the neutralization of magnesium dopants
+
+in the case of the magazine dopants if
+
+you grow the p-gan on top of the argon
+
+barrier the magnesium can diffuse into
+
+the argon barrier so if you do the sims
+
+measurement after the growth you can see
+
+the magnesium tail in the argon barrier
+
+so magnesium in the argan barrier are
+
+activated because of the pollution
+
+field in the argan barrier and it can
+
+cause the more positive vt in the fresh
+
+device
+
+but under positive gauge voltage stress
+
+the pollution field in diagon battery is
+
+reduced and a lot of holes can get in
+
+can be injected into the argon barrier
+
+and this effect
+
+reduced the number of ionized magnesium
+
+concentration in the argon barrier as
+
+you can see in this figure and this can
+
+cause negativity to shift
+
+everything stability in the pig and gate
+
+also is also observed after off-stage
+
+stress
+
+so this research investigates the video
+
+shift after high voltage off state
+
+so if you see this a left figure first
+
+the devices were stressed in the high
+
+voltage off state and they came back to
+
+the global piece and transport curves
+
+were measured
+
+and after high voltage off state the
+
+positivity shift is observed as you can
+
+see in this figure
+
+an amount of the shift increases with
+
+increasing the offset drain voltage
+
+but what is very interesting is one of
+
+the leadership shows a direct
+
+correlation to the charged image to the
+
+peak and gate in the during the off
+
+state
+
+so what happens is
+
+during the off state this p-game and the
+
+channel junction is a reverse bias
+
+so holes in the pgan region
+
+are depleted and they can escape the
+
+peak and through this top sharky
+
+junction
+
+but once the device comes back to the
+
+low voltage state now the holes
+
+have to come back to the pgand but it
+
+takes time because now they have to go
+
+through this reverse bias sharky
+
+junction
+
+and this delay caused the whole
+
+deficiency in the p gap and caused the
+
+positivity to shift
+
+so as you can see in these uh studies
+
+the pigan gate can have a various
+
+dynamic
+
+leadership behaviors and these effects
+
+need to be considered in the device
+
+design and also circuit design
+
+last but not least the dynamic rds zone
+
+is also very important phenomenon in gan
+
+device
+
+i believe that this dynamic rdso has
+
+been studied most extensively among all
+
+other reliable issues in gallium nitride
+
+so simply speaking the dynamic radiation
+
+so called the chrome collapse
+
+is already so increased during switching
+
+operation
+
+so device switches between on and off
+
+state and after coming back from the off
+
+state the onstate resistance is degraded
+
+compared to the fresh device
+
+but this degradation is not permanent if
+
+you stop switching and wait for enough
+
+time the most of our adjacent
+
+degradation can be recovered
+
+the recurrent time varies from some
+
+microsecond to a few tens of hours so to
+
+capture the older dynamic artists in
+
+effect it is important to minimize the
+
+delay between the stress and measurement
+
+so this right figure shows the dynamic
+
+radius zone of good and bad devices
+
+under high voltage switching and the rds
+
+zone was measured with less than one
+
+microsecond delay
+
+so in the good device the rds on drift
+
+is negligible while in the bad device
+
+rds zone shoots drops so its rds is
+
+increased by few times this can cause a
+
+severe conduction loss increase and also
+
+cause the additional cell feeding
+
+so the cause of the dynamic rds zone is
+
+the electron trapping under high
+
+electric field stress
+
+and then in the following slides we're
+
+going to review the couple of different
+
+electron trapping mechanisms in gen
+
+device and what kinds of process
+
+improvement is needed to suppress them
+
+the first electron trapping mechanism is
+
+leakage current induced surface trapping
+
+so in gan device high voltage blocking
+
+is done by these multiple field plates
+
+and this means that these field plates
+
+are exposed to the high electric field
+
+so electrons in the field plate can be
+
+ejected due to this high electric field
+
+and they can be trapped in the
+
+dielectric or dielectric elegant
+
+interface
+
+especially the argon surfaces are many
+
+donor states where the electrons can be
+
+trapped
+
+and the gallium nitride does not have a
+
+high quality native oxide which can
+
+pacify these surface states like a
+
+silicon oxide for silicon
+
+so once the
+
+many electrons are trapped in these
+
+surface states
+
+these electrons can
+
+deplete the true deck channel and
+
+increase the device resistance
+
+and also in the off state these trapped
+
+electrons can increase the depletion
+
+reason and expand the
+
+push out the depletion reason
+
+and since this is a similar to the
+
+similar to similar that there is
+
+additional gate in this access region so
+
+it's also called as a watergate effect
+
+so if this virtual gate effect is a
+
+severe you can also change the electric
+
+field profile completely
+
+so if you see this right figure with the
+
+negotiable electron trapping the
+
+electric field peak
+
+is formed near the gate field plate edge
+
+and most of the voltage drop also occurs
+
+in this region
+
+but once the severe vulture get effect
+
+happens now the depletion region is
+
+expanding and the electric field peak is
+
+now formed near the drain edge
+
+so to suppress this surface trapping
+
+mechanism we obviously need a high
+
+quality surface participation technology
+
+so there has been uh various studies on
+
+the
+
+fibrostatic films such as
+
+silicon nitride silicon oxide aluminium
+
+oxide aluminum nitride etc
+
+but in current industries uh the silicon
+
+nitride or silicon oxide are mainly used
+
+to suppress this surface electric
+
+trapping mechanism
+
+another way to suppress this surface
+
+trapping is to reduce the electron
+
+supply
+
+so as you reviewed in the previous slide
+
+the main source of the electron is the
+
+liquid current caused by high electric
+
+field
+
+so by reducing the electric field near
+
+the field plate pets we can effectively
+
+suppress this process
+
+for example instead of using a single
+
+field plate by using the multiple field
+
+plate we can effectively reduce the
+
+electric field peak
+
+so if you see this right figure
+
+compared to the single field plate
+
+device the dual field plate devices show
+
+much lower peak electric field and is
+
+also helpful for the dynamic rds and
+
+performance improvement
+
+but this uh the
+
+field plate uh techno field plate option
+
+is not free because with the increasing
+
+the number of field plates the process
+
+complexity increases and also it can
+
+also affect the
+
+switching performance because it
+
+increases the output capacitance
+
+so when we design the field plate
+
+multiple factors need to be considered
+
+dialect from tddb the dynamic rds zone
+
+process complexity and also the output
+
+capacitance
+
+another important electron trapping
+
+mechanism in in the off state is the
+
+electron trapping inside of the gallium
+
+nitride fee
+
+so as you reviewed in the ttp part there
+
+is a vertical electric field between the
+
+drain side channel and the substrate
+
+so electrons in the substrate can be
+
+injected into the gallium nitride and
+
+they can be trapped
+
+so to study this electron trapping
+
+mechanism
+
+the people typically use the backing
+
+stress configuration
+
+so to replicate the drain side result in
+
+the standard device in the off state
+
+then now you apply the negative
+
+substrate voltage with applying low
+
+voltage on top terminals
+
+so in this case the entire device is
+
+exposed to the vertical electric field
+
+so the electron traffic in gallium
+
+nitride epi can be amplified
+
+but at the same time since we apply the
+
+low voltage on top terminals we can
+
+exclude the surface trapping mechanism
+
+that we reviewed in the previous slide
+
+so if you see the bottom figures
+
+the dynamic rds zone of the standard
+
+device shows a very similar temperature
+
+dependence to the back getting stress
+
+data
+
+this indicates that the dominant
+
+trapping mechanism in this device is the
+
+electron trapping in gallium nitrate
+
+and to suppress this electron trapping
+
+in the epi
+
+the growth happy growth condition
+
+optimization is critical
+
+for example the
+
+carbon level
+
+is optimization is very critical for
+
+high quality design and even in the same
+
+carbon level the other growth conditions
+
+such as the temperature or pressure can
+
+affect the crystal quality
+
+and also similar to the surface trapping
+
+mechanism we can also reduce the
+
+electron supply to the again fb
+
+so by improving the aluminum nitrate
+
+nucleation layer and also purple layer
+
+we can reduce we can suppress the
+
+electron injection into the gallium
+
+nitride fee
+
+as one example this right figure shows
+
+that there is a good correlation between
+
+the particular diffusion current in the
+
+off state and the dynamic rdso
+
+so basically by making the buffer more
+
+insulating we can improve the dynamic
+
+reduction performance by suppressing
+
+this buffer trapping mechanism
+
+how care injection is another important
+
+trapping mechanism in gallium nitride
+
+so if there are 10 electrons on the high
+
+electroelectric field these electrons
+
+get accelerated under high electro
+
+electric field and these energy
+
+electrons can be trapped in the surface
+
+states or gallium nitride
+
+so to study this heart care injection
+
+effect the high voltage stem ions
+
+state stress setup can be used so if you
+
+see this center figure the rds zone was
+
+monitored as a function of stress time
+
+under high voltage semi on state stress
+
+so with the increasing the channel
+
+current from the 100 mm to the 10
+
+microamp the rds of degradation is
+
+accelerated because uh higher channel
+
+current means that a higher number of
+
+channel hot electrons
+
+and this high electron effect has a
+
+negative temperature activation because
+
+the increase in the lattice scattering
+
+at high temperature can suppress the hot
+
+electron generation
+
+so if the dominant electron trapping
+
+mechanism is a heart care injection the
+
+dynamic rds and performance can be
+
+actually improved at higher temperature
+
+as you can see in this figure
+
+but this high voltage stem ion state
+
+stress setup is useful to study the hot
+
+chair injection effect but since this is
+
+a dc setup there is a several there are
+
+several limitations
+
+for example we cannot use a high voltage
+
+and high current at the same time
+
+because it can cause a severe cell
+
+feeding
+
+so as another option we can use a double
+
+purse measurement
+
+so by controlling the gate and the drain
+
+voltage signals separately we can create
+
+the overlap time
+
+so during this overlap time device turns
+
+on under high drain voltage so during
+
+this overlap time a lot of hot carriers
+
+can be generated but we don't need to
+
+worry about the severe cell feeding
+
+because this overlap time is very short
+
+so this study showed in that the center
+
+figure
+
+studied the impact of this overlap time
+
+on device behavior
+
+and if you see this center figure with
+
+increasing this overlap time the el
+
+signal coming out of the device
+
+increases
+
+because of because the with a longer
+
+overlap time
+
+the number of hot carriers increases
+
+at the same time the dynamic rds and
+
+performance is degraded because of the
+
+heart carrier injection mechanism
+
+but in some other cases you may see
+
+completely opposite case
+
+so if you see this right figure
+
+now with the increasing this overlap
+
+time the dynamic rds where chrome flap's
+
+performance is actually improved
+
+which is a completely opposite result to
+
+the research the data shown in the
+
+center figure
+
+this is because the hot electrons also
+
+can cause the impact ionization
+
+and holes generated in the impact
+
+ionization
+
+can compensate attract electrons and
+
+improve the dynamic artisan performance
+
+so about a couple of years ago the
+
+hybrid drain technology which uses this
+
+whole compensation effect was uh
+
+published
+
+so
+
+additional p-type gallium nitride
+
+contact was added in front of the ohmic
+
+drain contact
+
+and the holes get injected from this
+
+additional contact and these holes
+
+compensate the trapped electrons and
+
+improve the dynamic adjacent performance
+
+so if you see this right figure compared
+
+to the reference device structure this
+
+hybridization device structure shows
+
+much better artisan stability at higher
+
+drainabilities
+
+so we have reviewed a couple of
+
+different electron trapping mechanisms
+
+in gen device
+
+so although we reviewed each trapping
+
+mechanism they separate
+
+mechanisms separately but in real
+
+application
+
+these mechanisms can interact with each
+
+other
+
+for example in the fresh device the
+
+electric field peak is formed near the
+
+field blade edge
+
+which is a similar to the ideal case
+
+but with the increase with the severe
+
+electron trapping in the surface state
+
+or a gallium nitride fee now the
+
+electric field profile can be changed
+
+and the depletion region can be pushed
+
+up
+
+once it becomes severe now the local
+
+electric field spike can be formed near
+
+the drain ends and because of this
+
+electric field spike now the hot car
+
+injection effect can be accelerated
+
+and this behavior is actually observed
+
+in actual measurement
+
+so if you see this bottom figure
+
+in the lower tza condition the el peak
+
+is
+
+observed near the field platelets which
+
+is similar to the ideal case or the
+
+fresh device case
+
+with increasing the drain voltage now
+
+the yield signal is pushed out and it
+
+difficult the real high voltage now the
+
+yield peak is mainly observed near the
+
+drainage which is similar to this last
+
+figure
+
+so as you can see in this example the
+
+understanding each trapping mechanism
+
+and also understanding the interaction
+
+of these mechanisms can give us a clear
+
+and better picture of the device
+
+reliability in actual operation
+
+so in the following section we're going
+
+to review the application level
+
+reliability which is more relevant to
+
+the real ucs
+
+then how can you evaluate the
+
+application level reliability
+
+one straightforward way is to stress
+
+devices in actual circuits
+
+and the stress time should be low enough
+
+to guarantee certain level of
+
+reliability
+
+and there have been several publications
+
+which are aligned to this aspect
+
+so in this left figure the affordable to
+
+gain devices were stressed in the 8-1
+
+converter circuits
+
+for 20 000 hours uh during this
+
+evaluation the maximum adjacent
+
+degradation was saturated at about
+
+eleven percent and uh no device failed
+
+in the right paper now 650 volt again
+
+devices uh were stressed in the septic
+
+converter for 3000 hours at 150 degrees
+
+c
+
+and during this test neither of uh
+
+serious artisan degradation or the
+
+leakage current increase was observed
+
+as another example the efficiency of the
+
+gain converter circuit was monitored for
+
+3000 hours at 175 degrees c and as you
+
+can see in this figure the converter
+
+circuit shows excellent
+
+stability
+
+so as you can see in these examples the
+
+one obvious way to
+
+validate the application level
+
+reliability is to build a circuit
+
+and run a long phone task
+
+but everybody uses different circuits
+
+and different different bias conditions
+
+basically there is no standard
+
+related to this issue one important
+
+question is whether there is any
+
+fundamental stress mode in actual
+
+applications
+
+which can be difficult to be covered in
+
+the device level test
+
+and if yes we need to understand the
+
+stress mode and develop more standard
+
+way to evaluate
+
+so let's check what kinds of stress
+
+modes exist in actual applications
+
+so this left figure shows a typical half
+
+bridge circuit and this right figure
+
+shows the device operation modes that we
+
+reviewed so there are three operation
+
+modes on state of state and the third
+
+quadrant and during the switching
+
+between on and off state either of a
+
+hard switching or the self ceiling
+
+transition
+
+is possible depending on circuit
+
+policies and controller circuits
+
+so let's first check the high to load
+
+transition of this switching node so
+
+initially the high side thread is on and
+
+the low side thread is off so the
+
+current flows from the v-in to the
+
+inductor through the high side valve
+
+and now once the high side fat turns off
+
+the current through the high side fat
+
+drops and then the switching node
+
+potential drops so the radius of high
+
+side that increases
+
+so during this transition the high side
+
+that goes through this soft switching
+
+transition
+
+supports the current drops and then
+
+drain voltage increases
+
+in the case of the low side fab
+
+to maintain the inductor current it goes
+
+through the
+
+uh
+
+it starts from the off state and goes to
+
+the third quadrant and once the device
+
+turns off it goes down state
+
+so in this high to low transition there
+
+is no special stress mode which is
+
+difficult to be covered in the device
+
+level test
+
+then let's see now the low tide
+
+transition
+
+so now the high side fat is off and the
+
+low side fed is on so the inductor
+
+current go through the load and the low
+
+side fat
+
+so once the high side fat turns on the
+
+current starts to increase in the low
+
+high side fat under high drain voltage
+
+and once the the soft switching load
+
+potential goes up now the radius of the
+
+high side that decreases
+
+so this during this transition the high
+
+side effect goes through this hard
+
+switching transition so under high drain
+
+voltage current force increases and then
+
+drainable tc drops
+
+and this hard switching transition is
+
+particularly stressful because both high
+
+electric field and high current coexist
+
+so a lot of hot carriers can be
+
+generated during this hard switching
+
+transition
+
+and also the high the idt and dvdt of
+
+the gain circuit can push this hard
+
+switching
+
+locus to the close to the soa boundary
+
+and since this hard switching transition
+
+occurs in many different circuit
+
+topologies such as a boost converter
+
+bulk converter and torrent pfc
+
+it can be regarded as a fundamental
+
+stress mode in actual applications
+
+then
+
+let's check whether the traditional
+
+device level qualification can cover
+
+this hard switching transition
+
+so if you see this table
+
+there are three main
+
+device level reliability tests
+
+so first hdgb is for the on state so
+
+htrb is for the offstate
+
+and aceto is for switching but it does
+
+not require hard switching transition
+
+and both academia and the industry
+
+recognized this gap
+
+and tried to develop a test vehicle to
+
+evaluate the hard switching robustness
+
+so in the first paper the inductor and
+
+resistor loads were used to generate
+
+this hard switching transition
+
+the second paper uses the pure inductive
+
+load switching the third one uses the
+
+register and the capacitor is your road
+
+to generate this hard switching
+
+transition
+
+although there are some differences in
+
+the circuit designs the main purposes
+
+are all same
+
+the introducing the hard switching
+
+stress on the test device to evaluate
+
+the device robustness under this stress
+
+and this slide shows the
+
+usefulness of the hard switching test
+
+vehicle
+
+so the devices shown in this slide will
+
+pass the traditional device level
+
+qualification including the htgb htrb
+
+and h2o without hard switching
+
+transition
+
+and this device is now stressed with by
+
+using this inductive load hard switching
+
+test vehicle
+
+and only one device passed
+
+the criteria
+
+so these production grade devices showed
+
+a stable rds zone over 1000 hours under
+
+40 volt heart switching at 150 degrees c
+
+but other devices from type a or type b
+
+group
+
+showed a lot of variations in the rds
+
+and performance and also some of the
+
+devices
+
+failed due to the soa
+
+and this data suggests that the
+
+traditional device level qualification
+
+does not guarantee the hard switching
+
+robustness
+
+and these devices are also evaluated in
+
+actual hybrid applications
+
+and consistent to the horizon test
+
+vehicle result the production grade
+
+device showed excellent stability over a
+
+thousand hours
+
+while the devices from the type a group
+
+showed the over temperature forth due to
+
+the severe rdst increase and also
+
+devised from the type group also shows
+
+some drift in the efficiency
+
+and this confirms that the hard
+
+switching test vehicle can be a good
+
+representation for the stress in real
+
+applications
+
+in addition to the
+
+effort to develop the hard switching
+
+test vehicle there are several recent
+
+studies to build a switching reliability
+
+model in gallium nitride
+
+so in this paper
+
+the multiple different the impact of the
+
+multiple different factors such as the
+
+temperature and drain voltage and
+
+switching current were studied
+
+and these impacts on the switching
+
+lifetime were implemented as a model and
+
+by using this model you can predict the
+
+device lifetime depending on the
+
+switching low cost
+
+there is another paper
+
+which proposed a general method to cover
+
+the different switching conditions
+
+so as you can see in this left figure
+
+the amount of the switching stress was
+
+calculated by using this formula the
+
+product of the drain voltage switching
+
+current and overlap time and some
+
+acceleration factors
+
+and by using this formula the one of the
+
+switching
+
+energy among the switching stress was
+
+calculated in different switching
+
+conditions and the device lifetime was
+
+projected
+
+so based on all these efforts the jfp
+
+180.01 was published recently which
+
+describes a standard way
+
+to evaluate the switching reliability in
+
+gan devices
+
+so there are two main categories the
+
+first one is a switching acceleration
+
+live test which is basically the device
+
+lifetime modeling under switching
+
+so similar to the previous papers we
+
+need to use some accelerations to
+
+understand the wearable mechanism and
+
+predict the device lifetime
+
+the second one is the dynamic edge tool
+
+which is very similar to the h2o but now
+
+the hard switching transition is
+
+required
+
+so the maximum operation voltage and the
+
+current laser are recommended for
+
+thousand hours to demonstrate
+
+demonstrate the stability of the device
+
+under high switching stress
+
+so that was the reliability
+
+in normal operation condition but in
+
+actual applications there is another
+
+area that we need to cover which is the
+
+auto so event
+
+the external electric shock or some
+
+controller port can trigger the auto
+
+vessel events
+
+and the high did t and dvd of gain
+
+circuit can occasionally introduce the
+
+voltage or current surge stress
+
+and power devices
+
+are required to survive under these auto
+
+so events for a certain amount of the
+
+time
+
+but you may think that it might be more
+
+challenging for gan devices to handle
+
+these out of s3 events
+
+because first the letter gain device
+
+doesn't have evidence breakdown so there
+
+is some concern for the robustness under
+
+the voltage search
+
+and also the
+
+electric device structure and the high
+
+current density
+
+uh can limit the robustness under the
+
+short circuit event
+
+so in the case of the robustness under
+
+the voltage source there has been
+
+concern due to the lack of ambulance but
+
+in reality it is not big problem
+
+so different from the conventional
+
+silicon power devices whose voltage
+
+rating is determined based on the about
+
+80 percent defined as about 80 percent
+
+of the actual breakdown workpiece the
+
+gain device breakdown voltage is much
+
+higher than the target operational
+
+voltage
+
+so the properly designed gain devices
+
+can handle the
+
+surge voltage surge stress without
+
+causing any serious issues
+
+so if this paper studies the
+
+robustness of the 600 volt gain device
+
+under 720 volt surge stress
+
+so if you see this uh top right figure
+
+the gain devices were stressed under 400
+
+volt input voltage
+
+and this info voltage was suddenly
+
+increased from 400 volts to the 720 volt
+
+but gan devices uh switch it under this
+
+720 volt surge event without any problem
+
+and even after 50 strikes
+
+there was no change in efficiency
+
+however
+
+some weakness under the short circuit
+
+event was observed especially in the
+
+standalone again device
+
+when the stress voltage is relatively
+
+low the devices show the excellent
+
+stability but if it was higher voltage
+
+the short circuit with stand time was
+
+less than 10 microseconds which is
+
+actually worse than typical silicon
+
+power devices or silicon carbide devices
+
+so in this aspect the system level
+
+reliability is very important in the
+
+gallium nitride for example
+
+the integrated gate driver solution can
+
+provide multiple smart gig functions
+
+such as fast over temperature or over
+
+current detection
+
+and it can prevent the potential
+
+reliability such as a short circuit and
+
+provide a more stable
+
+and complete solution
+
+so we have a review of various aspects
+
+of the reliability in the can devices
+
+and understanding these potential life
+
+issues and
+
+underlying mechanisms allow us to define
+
+the design space and push the device
+
+performance with meeting the required
+
+reliability
+
+so at the initial stage of the
+
+technology development the meeting the
+
+reliability is the main goal
+
+but but we did now with the successful
+
+technology qualification and
+
+commercialization people start to focus
+
+more on expanding the potential of this
+
+technology
+
+so in the last section uh we'll switch
+
+gears and review the recent innovations
+
+which can push the scan technology to
+
+the next level
+
+so one path to expand the potential of
+
+the gun technology
+
+is to increase the integration level
+
+by integrating the gate driver with the
+
+main power fat we can remove the
+
+parasitic inductance in the gay loop and
+
+improve the switching performance
+
+so initially it was done by co-packaging
+
+the silicon gate driver without gallium
+
+nitride power device
+
+but now it's moving toward the on-chip
+
+integration which builds the both the
+
+gate driver and the power device on the
+
+same gallium nitride chip
+
+and there has been successful
+
+commercialization with this approach
+
+and for the
+
+gate driver design with the gallium
+
+nitride the dcfl is which uses a
+
+depletion mode and fat and the
+
+investment with the empath is mainly
+
+used
+
+but to use a conventional cmos circuit
+
+we need the enhancement mode of p5
+
+although there are still many technical
+
+challenges to make a good investment
+
+mode of pfas such as low hold mobility
+
+or poor contact resistance there has
+
+been good progress in this area
+
+so if you see this right figure
+
+so by using the pgan region of the gas
+
+tag in the conventional
+
+e-mode power device
+
+global tcp fab was fabricated
+
+to push the vt the
+
+recessed gate structure was used and to
+
+increase the gate voltage of threshold
+
+voltage water the undoped gallium
+
+nitride where some plasma treatments
+
+were applied
+
+and as you can see in the right figures
+
+the decent device performance and the
+
+initial inverter operation were
+
+successfully demonstrated
+
+another
+
+path to inc to increase the integration
+
+level in the game technology is in power
+
+loop
+
+since the gantt device is a leather
+
+device we can build the high side and
+
+low side effects on the same chip
+
+but there is a one problem so if you put
+
+the high side and low side fats on the
+
+same chip now they share the
+
+same buffer and the substrate and in gan
+
+technology there is no pure anal
+
+isolation
+
+so in the high bridge operation once the
+
+high side thread is on the high side
+
+channel potential goes up and there is a
+
+vertical electric field between the high
+
+side of the channel and the substrate
+
+which depletes the two deck channel in
+
+the high side fat so this can cause the
+
+increase in conduction loss of the high
+
+side fat
+
+so to solve this problem the monolithic
+
+integration on soi vapor was
+
+demonstrated so here now the high side
+
+bed and low side fats were built on the
+
+soi vapor
+
+and the top silicon was isolated by
+
+using this deep trench chat
+
+so in this technology effectively the
+
+high side and low side effects are
+
+sitting on different substrates
+
+so this approach is quite interesting
+
+and i think it's innovative but there
+
+are still
+
+some room for additional improvement
+
+for example
+
+the process complexity can increase in
+
+this approach because of the
+
+soi wafer and this deep trench etch
+
+and also there can be some some
+
+limitation because of the poor thermal
+
+conductivity of the buried oxide
+
+so if you go the one step further in
+
+terms of the integration level now we
+
+can build everything that we mentioned
+
+before into on the single chip
+
+so if you see this speaker the gate
+
+driver high side fat and low side fat
+
+were integrated on a single gallium
+
+nitride chip
+
+and this can provide the best form
+
+factor and also maximize the switching
+
+performance
+
+in addition to the innovation to
+
+increasing the integration level we can
+
+also add more functionality by adding
+
+the in-situ sensing capability
+
+for example by adding the two deck
+
+resistor in the middle of the power fab
+
+we can use it as a temperature sensor
+
+and it can provide the faster over
+
+temperature detection function
+
+similarly now the sense that can be
+
+integrated in the middle power fab by
+
+sharing the gate and the source nodes
+
+with the main fab
+
+and by using the send spec current we
+
+can estimate the perfect current uh and
+
+this can be used
+
+for the zero current or over current
+
+detection which can improve the safety
+
+and efficiency of the entire system
+
+and also there has been continuous
+
+research
+
+on the new gallium nitride device
+
+structure
+
+so similar to the silicon 3d structure
+
+can provide additional freedom to
+
+improve the device performance in
+
+gallium nitride
+
+as exact for example the by stacking the
+
+heater structures multiple true deck
+
+channels can be formed as you can see in
+
+this figure
+
+and to control these multiple channels
+
+the trigate and the 3d field plate
+
+concept were demonstrated as you can see
+
+in this figure
+
+and thanks to the multiple channels
+
+this device
+
+shows a much better rsp
+
+within meeting the same breakdown
+
+voltage requirement
+
+so this is a one good example
+
+to show the new device structure can
+
+push the gain gain technology
+
+performance significant significantly
+
+lastly there has been continuous effort
+
+to scale up the gallium nitride wafers
+
+in current gain industry either of a six
+
+inch or eight inch gun vapors are used
+
+but about two years ago in this
+
+conference 12.2 gallon silicon
+
+technology was published
+
+although user mainly for the rfo
+
+applications which requires relatively
+
+thin buffer the excellent two-day
+
+uniformity occurs so across the 12-inch
+
+vapor shows the potential of the gallium
+
+nitride vapor scaling
+
+i think that brings me to the summary of
+
+this tutorial so the can technology is
+
+not the future technology anymore so
+
+fast and the widespread market adoption
+
+is happening
+
+and it has it's uh it's possible thanks
+
+to the extensive research to understand
+
+the potential reliable issues and
+
+underlying mech reliability mechanisms
+
+and also there has been continuous
+
+effort to demonstrate the robustness of
+
+this technology by setting out new
+
+standards such as switching reliability
+
+and with the continuous improvement in
+
+the reliability the gan technology is
+
+evolving in multiple directions in both
+
+device and system levels
+
+and it's expected that the scan
+
+technology can push the power
+
+electronics to the next level and open
+
+up the new area
+
+before finishing this talk i'd like to
+
+thank ti gang development team
+
+and
+
+i think that's pretty much of it thank
+
+you very much for all your attention
+
+thank you
+
+thank you very much for this nice talk
+
+uh
+
+again we have some time here uh for some
+
+questions if you come please
+
+go to the microphone state name and
+
+affiliation and then
+
+yeah
+
+open four questions
+
+thank you for very nice talk i'm taking
+
+a minute from cornell so can you please
+
+comment on the tdb issue in game night
+
+ride on grammar and vertical devices as
+
+you know in vertical garmin natural
+
+devices recently the
+
+queer avalanche breakdown is achieved
+
+from the many groups
+
+but the in your presentations you
+
+mentioned about the time dependent
+
+direct breakdown
+
+limits their device performance of their
+
+gallon silicon lateral devices would you
+
+please comment on these issues for
+
+vertical devices
+
+yes so this presentation is mainly for
+
+the electric and devices which
+
+in this device we don't see the
+
+avalanche breakdown but as you mentioned
+
+the vertical gan power devices you can
+
+build a pn junction and you can actually
+
+see the avalanche breakdown in that case
+
+now you need to think about the both tdd
+
+issue and avalanche breakdown so
+
+in the case
+
+in some voltage you may not see the
+
+avalanche breakdown because the voltage
+
+is not reached a critical electric field
+
+but still the device can fail in the
+
+depletion reason because of the tdp
+
+issue so
+
+the actual maximum operational voltage
+
+can be limited by actual tdb not the
+
+avalanche breakdown also in the
+
+political devices and i think this can
+
+be a good research area yeah thank you
+
+other questions
+
+so uh hello my name is from uh global
+
+ticket solutions
+
+um maybe uh if you could comment because
+
+it was not entirely clear to me for all
+
+the
+
+for all the different uh reliability
+
+mechanisms that
+
+bti uh
+
+mbtip bti hot carrier
+
+which ones
+
+for which one has been some recovery
+
+observed and which ones are permanent
+
+so in the case of tddb these are
+
+permanent so once the tdp happens
+
+you cannot
+
+recover that damage in the case of a
+
+dynamic rds zone is recoverable
+
+so if you stop switching and leave the
+
+device the electron trapping the
+
+electrons trapped in the
+
+trap sites can be detract and the rdsm
+
+can be recovered uh also the threshold
+
+voltage instability also can be
+
+recovered so it's uh of course uh it
+
+actually is a depends so if the stress
+
+voltage is relatively low the most of
+
+the threshold wtc shift can be recovered
+
+but if you go to the whole if the stress
+
+voltage is goes above a certain level
+
+you can start to introduce some
+
+permanent damage and you can see the
+
+actual
+
+semi-permanent shift in the threshold
+
+voltage
+
+did i answer your question
+
+thank you for the very interesting talk
+
+uh you said one of the challenges about
+
+p-fed is uh related to contact
+
+resistivity
+
+is it related to the the fact that the
+
+channel is indulged and if yes is there
+
+a way to
+
+overcome this challenge
+
+can you comment on this
+
+yes so
+
+so one one of the big challenges the the
+
+main dopants in the p-gan is a magnesium
+
+and the maximum level is relatively high
+
+so as i mentioned
+
+in the slide
+
+if even though you doped
+
+for example 1 in 19
+
+level actual whole density is pretty low
+
+so
+
+if you make the contact on this p gap
+
+the barrier height the
+
+the
+
+tunneling width can be quite high
+
+because of the effective lower doping
+
+level
+
+which caused the high contact resistance
+
+so i think i don't remember the exact
+
+matter but there is a certain kind of
+
+matter which can provide a relatively
+
+good contact resistance for the p-type
+
+gallium p-type gallium nitride but now
+
+the main challenge is the integration
+
+with the main power pack
+
+hi michael hunt from ime um just so you
+
+mentioned about a whole bunch of this
+
+instability in gang
+
+about traps was there a systematic study
+
+of the traps in in gang like what are
+
+the traps is it intrinsic traps
+
+exercising traps uh what are the truck
+
+energy levels has that been a systematic
+
+study
+
+yes so there are a lot of studies on the
+
+trap levels and for example
+
+the 0.9 eb 0.3b kind of traps are widely
+
+measured widely measured on the gallium
+
+nitride especially for the
+
+the dynamic rds zone rvt instability
+
+and but at the same time
+
+[Music]
+
+you may see the different trap levels
+
+depending on how you measure and how you
+
+grow the fb so that's the one of the key
+
+challenges how to manage these traps in
+
+the gallium nitride and also even though
+
+there are traps we need to
+
+control and uh and also if you
+
+if the form level is not close to that
+
+for that trap level it's not effective
+
+so which does not actually impact on
+
+device performance so that's another way
+
+to handle this trap issues in the
+
+gallium nitride so then then how do you
+
+minimize i mean if you can't
+
+really don't understand what our traps
+
+are present then how do you suppress it
+
+yeah for example
+
+when i
+
+mentioned about the gallium natural
+
+epigraphs carbon is uh is used to
+
+make insulating buffer but actually if
+
+you increase the carbon level it can
+
+degrade the crystal quality
+
+and
+
+previously the carbon doping is mainly
+
+done by the
+
+institute doping
+
+which means that if you lower the gross
+
+temperature of the gallium nitride the
+
+carbon is automatically doped through
+
+the
+
+the carrier gas but since uh but to
+
+increase the carbon level you need to
+
+use a lower growth temperature which can
+
+cause the degradation of the crystal
+
+quality and create a lot of traps
+
+so now the people start to use the the
+
+external source for the carbon so now
+
+you have an external carbon source so
+
+you can increase the growth temperature
+
+to maintain the high quality gallium
+
+nitride and you are controlling the
+
+carbon level by using the those of the
+
+external source so this is one way to
+
+optimize the
+
+crystal quality and also maintain the
+
+the device structure that the device
+
+designers want to okay thank you
+
+patrick cabinson from bennec
+
+thank you for your talk very
+
+comprehensive
+
+just general question you didn't detail
+
+the enhanced um the two enhancement
+
+modes so you focused on peak and gate
+
+how do you compare the
+
+recessed mesent and pig and gate in
+
+terms of reability and also integration
+
+like when you have all these different
+
+functions you want to make
+
+yes so the reason why i focus the p game
+
+based emo device in this presentation is
+
+the is most of the commercial again
+
+device e-mode gain devices adopt peak
+
+and gate of course there are also active
+
+research on other approaches
+
+for example the recessed gate structure
+
+has various advantages in terms of
+
+device performance because
+
+in the p-g-engage structure to make a
+
+threshold voltage positive you need to
+
+reduce the two deck density uh which
+
+degrades the own resistance but in the
+
+case of the recessed gauge structure you
+
+can maintain the same product density in
+
+the access region so there is a
+
+definitive benefit in our device are
+
+already sold again the problem is again
+
+the stability of the threshold voltage
+
+and controllability so when you do the
+
+recess for to make a threshold voltage
+
+positive
+
+you can degrade the 2d movie under the
+
+gate and now now you need to think about
+
+whether this is a beneficial for the
+
+entire device resistance because even
+
+though you can increase you can get
+
+better access resist excess region
+
+resistance but you are degrading the
+
+resistance in the channel reason
+
+now another challenge in the recessed
+
+case structure is as i mentioned with
+
+the slide the threshold instability so
+
+even though you can achieve the positive
+
+vt at time zero but after high voltage
+
+stress the vt can be shifted and
+
+the big device can become the depletion
+
+mode device so this uh these kind of
+
+reliable issues need to be handled in
+
+the other approaches so maybe less
+
+mature maybe
+

@@ -1,0 +1,778 @@
+okay now that we know roughly how
+
+there's a hetero structure works let's
+
+focus on devices which I think are much
+
+more interesting and in particular on
+
+the this is a very general one depending
+
+on where your highlight if it is then
+
+you would design a proper proper
+
+structure with probably designed in
+
+plates but in general what it is
+
+important to know this is the main
+
+structure you start from so what you
+
+have is a fourth terminal device you
+
+have source and drain which are ohmic
+
+contacts a substrate contact and you
+
+have a Schottky gate
+
+it's a hetero structure base as we've
+
+seen it's a normally-on device no I
+
+don't know if you're familiar with nan
+
+lian above definition but normally phone
+
+means that without applying any voltage
+
+the channel is already formed so and
+
+it's here so if you have any voltage
+
+applied on the drain you will see
+
+current flowing in the device with zero
+
+bias on the gate and this is something
+
+that people are working in say kids do
+
+not like too much because they might
+
+have shot the kid put 0 for 0 bias
+
+applied if the reason was shooting on
+
+the drain and the distance the the high
+
+electric field is generally stays
+
+between the gate and the end the drain
+
+so this is the drift region of the
+
+device it's a lateral structure so let's
+
+try to understand these devices made we
+
+have field plates you are familiar with
+
+the plates the way in which they are
+
+designed three depends on your structure
+
+and whether to fill is formed the way
+
+where the high electric field is is
+
+which it's in most of the structures is
+
+on the drain side of the gate contact
+
+and
+
+to the drain contact so these two are
+
+the critical points and most of the
+
+times indeed what you have is a feed
+
+plate on the gate which is extended from
+
+the gates to the drain and next are
+
+filled plates on top are connected to
+
+the source on top of the gate in some
+
+case it's not always the case but in
+
+some cases I've seen field plates on the
+
+drain as well to really release the
+
+pressure of the electric field on the
+
+drain side passivation layers and we
+
+know why we have position areas one
+
+reason is because we need to fill plate
+
+and so we need them to to release the
+
+electric field and to improve the offset
+
+performance of the device another reason
+
+and you will see why in a bit is to
+
+release the first layer of passivation
+
+is as shown to give better properties to
+
+the surface of the device so if you have
+
+a passivation the properties of this
+
+possession will affect the properties of
+
+this interface top layer which in this
+
+case is a gang cap passivation
+
+so it's a very important crucial layer
+
+and the second position three is just
+
+simply a final position of the device
+
+which is to be called a very kind of
+
+device the most common material used is
+
+a silicon nitride with different going
+
+technique either low pressure or plasma
+
+enhanced CVD the gun cap we mentioned it
+
+already I think now it becomes clearer
+
+why we have it I'm in off States we
+
+don't want any current going through the
+
+gate if you have a layer of gunk up this
+
+is how it is called you have you block
+
+the leakage going through the gates but
+
+we have seen that there is a trade-off
+
+to that thickness typical thicknesses I
+
+think I didn't invite them fear typical
+
+thicknesses are in between three and
+
+seven nanometers no more than that
+
+otherwise okay
+
+nice the Alan gonna cross structure we
+
+know why we have it there it's because
+
+we want a high electron density in the
+
+channel given the pizza polarity of the
+
+of the material the thickness of the of
+
+the argon as we seen before will define
+
+the value of the 2dec concentration you
+
+have but this buffer layer that you see
+
+between the gun and the substrate is a
+
+very important piece of design of the
+
+material unfortunately father wisest
+
+people do not people that design devices
+
+do not have access to this layer because
+
+it's really a secret of the foundry and
+
+they are very helpful not to disclose
+
+anything because it's what will
+
+determine the properties of the gun and
+
+the pure the gun layer is the peptide
+
+electrical properties of the material
+
+with E and these depend on - this buffer
+
+layer and the reason of that is because
+
+you have if you are talking about
+
+silicon based gun on a child devices so
+
+grown on the silicon substrate you have
+
+to adapt the properties of the silicon
+
+to the ones of the gun in order not to
+
+have any any defects in the so there are
+
+several ways of having this buffer layer
+
+and one is you can have single layer of
+
+aluminum nitride or aluminum gallium
+
+nitrite but this is not the most popular
+
+at the moment at least from what I know
+
+because given that it's a secret most of
+
+the times and another way of doing it is
+
+by creating a super lattice structure
+
+which means you have several layers done
+
+and algún one on top of each other
+
+another one which I didn't mention here
+
+we have seen actually myself is you have
+
+first day of aluminum nitride and then
+
+aluminum a fraction which will decrease
+
+towards zero to adapt the lumen I tried
+
+the gun so you'll have several layers of
+
+argon with decreasing amount volume
+
+concentration or the way from onion I
+
+tried to the gun yeah and it seems this
+
+protects the gun from the problems of
+
+his interface substrate we have we have
+
+different possibilities as a substrate
+
+supplier silicon carbide and silicon for
+
+each of this substrate I I put down some
+
+pros and cons for the sand pie it's very
+
+good because it seemed insulating so can
+
+withstand high growth temperatures and
+
+it's relatively cheap it has a lot I'm a
+
+conductivity and large lattice mismatch
+
+which means that when you grow the gun
+
+on top of it it has the mismatch in
+
+temperature coefficient does not create
+
+issues within the boundary silicon
+
+carbide the silicon carbide a substrate
+
+has a high thermal conductivity which is
+
+one of the very good properties of
+
+silicon carbide in general so you won't
+
+need a seminal heatsink for lowing down
+
+the temperature of the device and has a
+
+low lattice mismatch but it has quite
+
+expensive and the silicon it's our
+
+Hewlett one and the only way to convince
+
+people the gonna nitride can't replace
+
+actually silicon because of the cost
+
+because of the cost and the normal
+
+related to this technology so what my
+
+research and my group and most the
+
+groups are focusing on at the moment if
+
+gallium nitride on silicon
+
+because there the ability of a lot of
+
+diameters of substrates however the the
+
+problems with the substrate is large
+
+lattice mismatch and large coefficient
+
+of temperature expansion a mismatch and
+
+is why we have buffer layer though to
+
+alleviate this problem operation mode of
+
+the device we have four bias conditions
+
+one is zero bias nothing is applied to
+
+the device
+
+we have the channel is formed we said
+
+it's a normally on device
+
+nothing is pretty much happening on
+
+States keeping the gate at zero because
+
+the channel is already formed with zero
+
+bias indicates increasing the drain bias
+
+we have current flowing into the devices
+
+of course the gate bias has to be higher
+
+than threshold voltage which will be
+
+negative and lower than the Schottky
+
+turn-on voltage because this is a
+
+Schottky gate so if you increase the
+
+voltage above the opening the voltage
+
+which determines the opening of the
+
+Schottky contact you will have current
+
+flowing into the gate which you clearly
+
+don't want off state that kid has to go
+
+with an attraction voltage values of
+
+trash unbolted for this kind of devices
+
+are of the order of minus two maximum
+
+minus three so if you put a gate at
+
+minus five minus seven you have your
+
+device in in upstate so he depletes the
+
+channel under the gate and of course
+
+blocking mode we're talking about very
+
+high voltage on the drain and gate of
+
+negative bias biases below the threshold
+
+voltage what happens in this a situation
+
+is that the two then gets depleted from
+
+the gate to the drain into the drain as
+
+increase the drain bias and I think it's
+
+worth mentioning that as you see all the
+
+charge is confined in the two deck so to
+
+switch that off to the period and form
+
+the channel is everything is extremely
+
+fast it doesn't involve any injection or
+
+removal of
+
+education region it's extremely fast
+
+switching device
+
+okay okay so before I start I just want
+
+to spend a few more minutes on the on
+
+the structure and the operation of much
+
+of the structure so I don't know how
+
+clear it is the fact that when you have
+
+obtunded already formed you need to
+
+apply a negative bias to deplete the
+
+negative charge underneath and so as we
+
+were mentioning we have already that
+
+shown out there we had to apply a
+
+negative bias on the gate here it is V 0
+
+this will deplete the channel beneath
+
+the gate contact and will for a cut the
+
+connection between the two dimensional
+
+electron gas which is present from the
+
+gates to the source source and the one
+
+between the gate and the drain so for
+
+any train voltage applied you shouldn't
+
+see any current flowing into the device
+
+unless it's leakage current and we will
+
+see where it comes from a while if the
+
+drain by has its very high you had the
+
+question of the two tech also in the
+
+drift region which is the one going from
+
+the gate to the train up to the point
+
+which all the two deck is is depleted
+
+and the electric field picks most of the
+
+time is next to the trailer and 20
+
+microns independent doping because we do
+
+have some p-type doping for avoiding
+
+leakage from the source to drain punch
+
+through leakage that we will see general
+
+is 15 I would say it's in between
+
+Trivium between 10x Levitch shorter
+
+doesn't reach 10 10 is too big because
+
+the thicker it is the lowers it to the
+
+concentration C and Phi 3 and 7 I've
+
+seen 7 as well and the argon is between
+
+12 and 22 I would say 18 19 not typical
+
+values
+
+yeah so the dimension of the gate is 1
+
+micrometer to gate itself and in general
+
+the field played it's 1 2 micrometers
+
+from 1.5 it really depends on your
+
+electric field though how long this thin
+
+plate is but it's in between 1 & 2
+
+they won't say the resistance is given
+
+it's calculated in as a from there from
+
+the to death yes depending on the
+
+thickness of the layers above and if you
+
+have any doping in the structure which
+
+you do p-type I would see it later
+
+because you want to block the leakage
+
+current from the source to the drain and
+
+that's why it's very low because you
+
+have high density to channel electron a
+
+higher electron channel concentration
+
+concentration is yeah this is why
+
+potential is very powerful myself in the
+
+structure and yes the current flows only
+
+in this confined quantum world
+
+yes that's why go to the mobility is
+
+very high but if you think about the
+
+values of mobility in the gun itself
+
+it's around 700 which is not higher than
+
+silicon which is 1300 something but it
+
+reaches 2000
+
+just because of the suction itself and
+
+the polarization of the material both
+
+transfer characteristics which is ID VG
+
+and output characteristics so you have
+
+the ID VG which is on the device which
+
+is on per negative gate voltages and it
+
+opens this dropping in the current is
+
+because the Schottky gate has been
+
+switched on so as soon as there is
+
+current flowing into the gate the
+
+current through the drain decreases
+
+abruptly and this is what you see if you
+
+go for higher for too high today this
+
+value is around one volt in general so a
+
+3-2 minus 2.5 on the threshold voltage
+
+and one watt as the Schottky contact the
+
+electron current as is a bit and flows
+
+to the to deck and laterally from the
+
+source to the drain according to the
+
+convention from the drain to the source
+
+and these are the got family of the cat
+
+feces so it looks exactly the best that
+
+I would say field effect transistor it's
+
+just that it's based on this hetero
+
+structure and on the probabilities of
+
+the of the gun one thing we have to
+
+mention and I have to go back a little
+
+bit into the physics for doing that is
+
+the origin of the two-dimensional
+
+electron gas we've seen that we have a
+
+very high electron concentration in the
+
+in device but it's if you calculate that
+
+charge adjust accordingly to the
+
+polarization charge and electric keep in
+
+the structure and then you measure your
+
+device and don't see the resistance and
+
+then the from that extrapolated actual
+
+value we're having the device most of
+
+the cases you have even higher
+
+concentration of electrons than one
+
+predicted by theory the reason of that
+
+is because you have I think let me go
+
+back just one second you have this
+
+interface between the silicon nitride
+
+and the gun cap order
+
+depending which is the layer at the top
+
+you have this interface which is crucial
+
+is very important what the city's
+
+interface are in most of the case the
+
+defects so these defects which are also
+
+called traps don't know if like traps
+
+now I don't know how much familiar you
+
+are with traps but you can imagine them
+
+being being that energy level from the
+
+conduction band for example has it is
+
+here being a reservoir of carriers if
+
+it's donors as soon as they have enough
+
+energy to get ionized which means to
+
+release the electrons from this energy
+
+level to the conduction band then they
+
+are providing electron to the to the
+
+structure and this providing of
+
+electrons will it will reinforce the
+
+two-dimensional electron gas this is one
+
+of the theories related to the very high
+
+concentration of electrons in the
+
+channel you can have all kinds of
+
+distributions of op donors the single
+
+one is the uniform it's the single level
+
+which you have on the left hand side
+
+picture so you have just one energy
+
+level of carriers you need the
+
+conduction band providing electrons and
+
+one which is a little bit more
+
+complicated it's a uniform distribution
+
+in energy which you have you have the
+
+you you will have their unit addition of
+
+these traps depending on the only
+
+voltage drop it is that is interphase
+
+why they are so important we don't have
+
+to forget about talking about what
+
+vanghoul material so you don't you won't
+
+have many lectures coming from the
+
+valence band to the conduction band
+
+ten minutes excited because depending up
+
+for the argon is around
+
+concentration of home - it's around four
+
+point three for that aluminum nitride a
+
+six point two so it's even higher why if
+
+you have energy levels let's say point
+
+two point four from the conduction band
+
+then you need mushroom energy to have
+
+excitation of electrons from the
+
+energy from the adora energy level to
+
+the conduction band so now we can
+
+understand why we have what is equation
+
+gives you this value which is much
+
+better than the one for silicon carbide
+
+and silicon silicon based devices we
+
+have high electron mobility why do we
+
+have it I think now should be clear we
+
+have lots of electrons in the two
+
+dimensional electron gas not scattering
+
+with any with any tokens and being
+
+confined in that quantum well which was
+
+shown before we have high electron
+
+concentration and the critical electric
+
+field is higher because of the wider
+
+band gap of the material
+
